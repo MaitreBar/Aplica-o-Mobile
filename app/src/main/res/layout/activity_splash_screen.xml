@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.SplashScreen">
+
+    <ImageView
+        android:id="@+id/iv_logo_splash"
+        android:layout_width="133dp"
+        android:layout_height="136dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/logo_verde_escuro" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/begeClaro"
+        android:layout_below="@id/iv_logo_splash"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_nome_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/old_standard_tt_regular"
+        android:text="@string/maitre"
+        android:textAlignment="center"
+        android:textColor="@color/begeClaro"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

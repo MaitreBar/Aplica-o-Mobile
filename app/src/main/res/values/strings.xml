@@ -1,9 +1,36 @@
 <resources>
     <string name="app_name">Maitre</string>
 
-<!--    1. SplashScreen -->
+<!--    Menu footer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_reservas">Reservas</string>
+    <string name="menu_perfil">Perfil</string>
+
+    <!--    1. SplashScreen -->
     <string name="maitre">MAÎTRE</string>
 
+    <!--    2. Home -->
+    <string name="txt_home">Reserve a sua experiência</string>
+
+<!--    ?. Reserva-->
+    <string name="nome_bar1">Beerwings</string>
+    <string name="nome_bar2">Madureira</string>
+    <string name="dois_cifroes">$$</string>
+    <string name="tres_cifroes">$$$</string>
+    <string name="nota_bar1">4.8</string>
+    <string name="nota_bar2">3.7</string>
+    <string name="assentos">Assento (s) :</string>
+    <string name="nrm_assento">1 & 2 </string>
+    <string name="nomes">Nome (s) :</string>
+    <string name="nome_reserva">Liz e Anna</string>
+    <string name="dia">Dia :</string>
+    <string name="horario">Horário :</string>
+    <string name="horario_reserva1">11AM</string>
+    <string name="horario_reserva2">22pm</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
