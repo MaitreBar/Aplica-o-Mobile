@@ -12,36 +12,38 @@
     <!--    2. Home -->
     <string name="txt_home">Reserve a sua experiência</string>
 
+    <!--    Formulários-->
+    <string name="formulario_txt_entrar">Entrar</string>
+    <string name="formulario_nome">Nome completo</string>
+    <string name="formulario_hint_nome">Liz Smith</string>
+    <string name="formulario_nascimento">Data de nascimento</string>
+    <string name="formulario_hint_nascimento">DD/MM/AAAA</string>
+    <string name="formulario_rg">RG</string>
+    <string name="formulario_hint_rg">XX.XXX.XXX-X</string>
+    <string name="formulario_cpf">CPF</string>
+    <string name="formulario_hint_cpf">XXX.XXX.XXX-XX</string>
+    <string name="formulario_celular">Celular</string>
+    <string name="formulario_hint_celular">(XX) 9XXXX-XXXX</string>
+    <string name="formulario_email">E-mail</string>
+    <string name="formulario_hint_email">liz@gmail.com</string>
+    <string name="formulario_senha">Senha</string>
+    <string name="formulario_hint_senha">*******</string>
+    <string name="formulario_confirmar_senha">Confirmar senha</string>
+
     <!--    3. Login-->
-    <string name="login_entrar">Entrar</string>
     <string name="login_txt_entrar">Não possui conta?</string>
     <string name="login_txt_cadastro">Cadastre-se</string>
-    <string name="login_email">E-mail</string>
-    <string name="login_hint_email">liz@gmail.com</string>
-    <string name="login_senha">Senha</string>
-    <string name="login_hint_senha">*******</string>
 
     <!--    4. Criar conta-->
     <string name="cadastro_criar">Criar conta</string>
     <string name="cadastro_txt_login">Já tem uma conta?</string>
-    <string name="cadastro_txt_entrar">Entrar</string>
-    <string name="cadastro_nome">Nome completo</string>
-    <string name="cadastro_hint_nome">Liz Smith</string>
-    <string name="cadastro_nascimento">Data de nascimento</string>
-    <string name="cadastro_hint_nascimento">DD/MM/AAAA</string>
-    <string name="cadastro_rg">RG</string>
-    <string name="cadastro_hint_rg">XX.XXX.XXX-X</string>
-    <string name="cadastro_cpf">CPF</string>
-    <string name="cadastro_hint_cpf">XXX.XXX.XXX-XX</string>
-    <string name="cadastro_celular">Celular</string>
-    <string name="cadastro_hint_celular">(XX) 9XXXX-XXXX</string>
-    <string name="cadastro_email">E-mail</string>
-    <string name="cadastro_hint_email">liz@gmail.com</string>
-    <string name="cadastro_senha">Senha</string>
-    <string name="cadastro_hint_senha">*******</string>
-    <string name="cadastro_confirmar_senha">Confirmar senha</string>
     <string name="cadastro_btn_criar">Criar</string>
 
+    <!--    ?. Alterar Perfil-->
+    <string name="alterar_antiga_senha">Senha antiga</string>
+    <string name="alterar_nova_senha">Nova senha</string>
+    <string name="alterar_txt_alterar">Alterar perfil</string>
+    <string name="alterar_btn_atualizar">Atualizar</string>
 
     <!--    ?. Reserva-->
     <string name="nome_bar1">Beerwings</string>

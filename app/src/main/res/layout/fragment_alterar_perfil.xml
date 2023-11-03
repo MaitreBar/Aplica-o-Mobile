@@ -1,14 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlterarPerfil">
+    tools:context=".AlterarPerfil"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--    Cabeçalho-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/begeClaro"
+        android:orientation="vertical"
+        android:id="@+id/ll_nav_alterar"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo_cabecalho"
+                android:text="@string/alterar_txt_alterar"/>
+
+            <ImageButton
+                style="@style/button_titulo_cabecalho"
+                android:id="@+id/tv_seta_login"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="10dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_nome"/>
+            <EditText
+                android:id="@+id/et_atualizar_nome"
+                android:inputType="textPersonName"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_nome"
+                android:background="@drawable/rounded_edit_text"/>
 
-</FrameLayout>
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_nascimento"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/et_atualizar_dtNasc"
+                android:inputType="number"
+                app:mask="##/##/####"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_nascimento"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_rg"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/et_atualizar_rg"
+                app:mask="##.###.###-A"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_rg"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_cpf"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/et_atualizar_cpf"
+                android:inputType="number"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_cpf"
+                app:mask="###.###.###-##"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_celular"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/et_atualizar_celular"
+                android:inputType="number"
+                app:mask="(##) 9####-####"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_celular"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_email"/>
+            <EditText
+                android:id="@+id/et_atualizar_email"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_email"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/alterar_antiga_senha"/>
+            <EditText
+                android:id="@+id/et_senha_antiga"
+                android:inputType="textPassword"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_senha"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/alterar_nova_senha"/>
+            <EditText
+                android:id="@+id/et_atualizar_senha"
+                android:inputType="textPassword"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_senha"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <TextView
+                style="@style/titulo_input_formulario"
+                android:text="@string/formulario_confirmar_senha"/>
+            <EditText
+                android:id="@+id/et_atualizar_confirmar_senha"
+                android:inputType="textPassword"
+                style="@style/input_formulario"
+                android:hint="@string/formulario_hint_senha"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <Button
+                android:id="@+id/bt_atualizar"
+                style="@style/button_formulario"
+                android:text="@string/alterar_btn_atualizar"
+                android:backgroundTint="@color/begeClaro"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
