@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Reservas">
+    tools:context="Reserva">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="165dp"
             android:background="@color/verdeEscuro">
 
-<!--            Texto card -->
+            <!--            Texto card -->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -325,4 +325,3 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
-

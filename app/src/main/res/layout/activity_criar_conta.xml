@@ -1,9 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CriarConta">
+    tools:context=".CriarConta"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    Cabeçalho-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/verdeEscuro"
+        android:orientation="vertical"
+        android:id="@+id/ll_nav_cadastro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                style="@style/titulo_cabecalho"
+                android:text="@string/cadastro_criar"/>
+
+            <ImageButton
+                style="@style/button_titulo_cabecalho"
+                android:id="@+id/tv_seta_login"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/subtitulo_cabecalho"
+                    android:text="@string/cadastro_txt_login"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ir_login"
+                    style="@style/subtitulo_cabecalho"
+                    android:clickable="true"
+                    android:text="@string/cadastro_txt_entrar"
+                    android:textColor="@color/verdeAgua"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="vertical">
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_nome"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_nome"
+                        android:inputType="textPersonName"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_nome"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_nascimento"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_dtNasc"
+                        android:inputType="number"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_nascimento"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_rg"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_rg"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_rg"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_cpf"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_cpf"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_cpf"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_celular"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_celular"
+                        android:inputType="number"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_celular"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_email"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_email"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_email"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_senha"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_senha"
+                        android:inputType="textPassword"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_senha"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <TextView
+                        style="@style/titulo_input_formulario"
+                        android:text="@string/cadastro_confirmar_senha"/>
+                    <EditText
+                        android:id="@+id/et_cadastro_confirmar_senha"
+                        android:inputType="textPassword"
+                        style="@style/input_formulario"
+                        android:hint="@string/cadastro_hint_senha"
+                        android:background="@drawable/rounded_edit_text"/>
+
+                    <Button
+                        style="@style/button_formulario"
+                        android:text="@string/cadastro_btn_criar"
+                        android:backgroundTint="@color/verdeEscuro"/>
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>
