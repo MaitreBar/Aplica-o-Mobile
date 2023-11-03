@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".layout.Login"
     android:orientation="vertical">
 
     <!--    Cabeçalho-->
@@ -27,7 +27,7 @@
 
             <ImageButton
                 style="@style/button_titulo_cabecalho"
-                android:id="@+id/tv_seta_login"/>
+                android:id="@+id/tv_seta_home"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                     android:layout_marginLeft="30dp"/>
 
                 <TextView
-                    android:id="@+id/tv_ir_login"
+                    android:id="@+id/tv_ir_cadastro"
                     style="@style/subtitulo_cabecalho"
                     android:clickable="true"
                     android:text="@string/login_txt_cadastro"
