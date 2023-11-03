@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Maitre</string>
 
-<!--    Menu footer-->
+    <!--    Menu footer-->
     <string name="menu_home">Home</string>
     <string name="menu_reservas">Reservas</string>
     <string name="menu_perfil">Perfil</string>
@@ -12,7 +12,7 @@
     <!--    2. Home -->
     <string name="txt_home">Reserve a sua experiência</string>
 
-<!--    ?. Reserva-->
+    <!--    ?. Reserva-->
     <string name="nome_bar1">Beerwings</string>
     <string name="nome_bar2">Madureira</string>
     <string name="dois_cifroes">$$</string>
@@ -20,7 +20,7 @@
     <string name="nota_bar1">4.8</string>
     <string name="nota_bar2">3.7</string>
     <string name="assentos">Assento (s) :</string>
-    <string name="nrm_assento">1 & 2 </string>
+    <string name="nrm_assento">1 &amp; 2 </string>
     <string name="nomes">Nome (s) :</string>
     <string name="nome_reserva">Liz e Anna</string>
     <string name="dia">Dia :</string>
