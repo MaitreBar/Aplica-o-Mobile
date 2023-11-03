@@ -13,7 +13,7 @@
         android:layout_height="180dp"
         android:background="@color/begeClaro"
         android:orientation="vertical"
-        android:id="@+id/ll_nav_cadastro">
+        android:id="@+id/ll_nav_login">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,7 +23,7 @@
 
             <TextView
                 style="@style/titulo_cabecalho"
-                android:text="@string/login_entrar"/>
+                android:text="@string/formulario_txt_entrar"/>
 
             <ImageButton
                 style="@style/button_titulo_cabecalho"
@@ -64,27 +64,28 @@
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/login_email"/>
+                android:text="@string/formulario_email"/>
             <EditText
-                android:id="@+id/et_cadastro_email"
+                android:id="@+id/et_email"
                 style="@style/input_formulario"
-                android:hint="@string/login_hint_email"
+                android:hint="@string/formulario_hint_email"
                 android:background="@drawable/rounded_edit_text"/>
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/login_senha"/>
+                android:text="@string/formulario_senha"/>
             <EditText
-                android:id="@+id/et_cadastro_senha"
+                android:id="@+id/et_senha"
                 android:inputType="textPassword"
                 style="@style/input_formulario"
-                android:hint="@string/login_hint_senha"
+                android:hint="@string/formulario_hint_senha"
                 android:background="@drawable/rounded_edit_text"/>
 
 
             <Button
+                android:id="@+id/bt_logar"
                 style="@style/button_formulario"
-                android:text="@string/login_entrar"
+                android:text="@string/formulario_txt_entrar"
                 android:backgroundTint="@color/begeClaro"/>
         </LinearLayout>
     </ScrollView>
