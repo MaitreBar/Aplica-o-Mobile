@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Perfil">
+    tools:context=".Perfil"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--        Cabeçalho-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp">
+            <TextView
+                style="@style/perfil_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/perfil_user_name"
+                android:id="@+id/tv_perfil_user_name"/>
+
+<!--            Informações usuário-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    style="@style/perfil_info_user"
+                    android:text="@string/perfil_telefone"/>
+                <ImageView
+                    style="@style/perfil_circle_info_user"/>
+                <TextView
+                    style="@style/perfil_info_user"
+                    android:text="@string/perfil_email" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--    Botões de navegação-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_perfil_reservas"
+            android:text="Reservas"
+            android:drawableLeft="@drawable/ic_favorite"
+            style="@style/perfil_button"/>
+        <Button
+            android:id="@+id/btn_perfil_reservar"
+            android:text="Reserve agora"
+            android:drawableLeft="@drawable/ic_calendar_check"
+            style="@style/perfil_button"/>
+        <Button
+            android:id="@+id/btn_perfil_alterar"
+            android:text="Alterar perfil"
+            android:drawableLeft="@drawable/ic_pencil_edit"
+            style="@style/perfil_button"/>
+        <Button
+            android:id="@+id/btn_perfil_chat"
+            android:text="Chat"
+            android:drawableLeft="@drawable/ic_info"
+            style="@style/perfil_button"/>
+        <Button
+            android:id="@+id/btn_perfil_logout"
+            android:text="Logout"
+            android:drawableLeft="@drawable/ic_logout"
+            android:textColor="@color/begeEscuro"
+            style="@style/perfil_button"/>
+    </LinearLayout>
+</LinearLayout>
