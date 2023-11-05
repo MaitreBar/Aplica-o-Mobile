@@ -57,6 +57,7 @@
     <string name="nomes">Nome (s) :</string>
     <string name="nome_reserva">Liz e Anna</string>
     <string name="dia">Dia :</string>
+    <string name="dia_reserva">23/11/2023</string>
     <string name="horario">Horário :</string>
     <string name="horario_reserva1">11AM</string>
     <string name="horario_reserva2">22pm</string>
