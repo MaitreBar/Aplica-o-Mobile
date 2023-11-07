@@ -39,7 +39,7 @@
     <string name="cadastro_txt_login">Já tem uma conta?</string>
     <string name="cadastro_btn_criar">Criar</string>
 
-<!--        5. LGPD-->
+    <!--        5. LGPD-->
     <string name="txt_lgpd1">Permissão de uso de dados</string>
     <string name="txt_lgpd2">Confirma saber que nosso sistema está de acordo com a lei LGPD   nº 13.853, de 2019</string>
     <string name="btt_sim">Sim</string>
@@ -68,6 +68,10 @@
     <string name="horario_reserva1">11AM</string>
     <string name="horario_reserva2">22pm</string>
 
+<!--    ?. Telefone Estabelecimento-->
+    <string name="telefone">Telefone </string>
+    <string name="nrm_telefone">(11) 98765-4321</string>
+
     <!--    ?. Perfil-->
     <string name="perfil_user_name">Liz Smith</string>
     <string name="perfil_telefone">+1 - 4842989351</string>
@@ -79,6 +83,7 @@
     <string name="perfil_chat">Chat</string>
     <string name="perfil_txt_chat">Chat, retire suas dúvidas.</string>
     <string name="perfil_logout">Logout</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
