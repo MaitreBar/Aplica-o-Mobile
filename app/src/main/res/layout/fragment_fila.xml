@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            tools:ignore="UselessParent">
+            tools:ignore="UselessParent"
+            android:background="@color/branco">
 
             <LinearLayout
                 android:layout_width="match_parent"
