@@ -71,12 +71,17 @@
     <!--    ?. Telefone Estabelecimento-->
     <string name="telefone">Telefone </string>
     <string name="nrm_telefone">(11) 98765-4321</string>
-    
-<!--    ?. Fila-->
-<string name="fila">Fila</string>
+
+    <!--    ?. Fila-->
+    <string name="fila">Fila</string>
     <string name="txt_fila">Você está na posição </string>
     <string name="txt_fila2">.  Aguarde.</string>
-    
+
+<!--    ?. Confirmação Reserva-->
+    <string name="txt_confirmacao1">Deseja confirmar? </string>
+    <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba "Reserva"</string>
+    <string name="btt_cancelar">Cancelar</string>
+
     <!--    ?. Perfil-->
     <string name="perfil_user_name">Liz Smith</string>
     <string name="perfil_telefone">+1 - 4842989351</string>
