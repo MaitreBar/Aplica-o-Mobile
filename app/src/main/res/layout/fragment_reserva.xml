@@ -48,7 +48,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="390dp"
@@ -182,10 +182,10 @@
                             android:fontFamily="@font/quicksand_light"
                             android:text="@string/nrm_assento"
                             android:textSize="15sp" />
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </ScrollView>
+
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>
