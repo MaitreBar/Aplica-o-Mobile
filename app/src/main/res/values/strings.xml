@@ -68,10 +68,15 @@
     <string name="horario_reserva1">11AM</string>
     <string name="horario_reserva2">22pm</string>
 
-<!--    ?. Telefone Estabelecimento-->
+    <!--    ?. Telefone Estabelecimento-->
     <string name="telefone">Telefone </string>
     <string name="nrm_telefone">(11) 98765-4321</string>
-
+    
+<!--    ?. Fila-->
+<string name="fila">Fila</string>
+    <string name="txt_fila">Você está na posição </string>
+    <string name="txt_fila2">.  Aguarde.</string>
+    
     <!--    ?. Perfil-->
     <string name="perfil_user_name">Liz Smith</string>
     <string name="perfil_telefone">+1 - 4842989351</string>
@@ -83,7 +88,6 @@
     <string name="perfil_chat">Chat</string>
     <string name="perfil_txt_chat">Chat, retire suas dúvidas.</string>
     <string name="perfil_logout">Logout</string>
-
 
 
     <!-- TODO: Remove or change this placeholder text -->
