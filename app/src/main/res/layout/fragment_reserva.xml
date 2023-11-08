@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Reserva">
 
-    <RelativeLayout
+    <!--        Card verde escuro -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/branco">
+        android:layout_height="165dp"
+        android:background="@color/verdeEscuro">
 
-        <!--        Card verde escuro -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:background="@color/verdeEscuro">
-
-            <!--            Texto CardVerdeEscuro -->
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="33dp"
                 android:layout_marginTop="65dp"
+                android:layout_marginEnd="120dp"
                 android:fontFamily="@font/old_standard_tt_bold"
-                android:text="@string/menu_reservas"
+                android:text="@string/txt_reservas"
                 android:textColor="@color/branco"
-                android:textSize="40sp"/>
+                android:textSize="40sp">
+
+            </TextView>
 
             <!--            Seta: voltar -->
             <ImageButton
                 style="@style/botaoSeta"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="70dp"
                 android:contentDescription="botão de voltar"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+
+                />
 
         </LinearLayout>
+
+    </LinearLayout>
 
         <!--        Card de reserva-->
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="180dp">
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="390dp"
@@ -136,7 +140,8 @@
                             android:layout_height="20dp"
                             android:fontFamily="@font/quicksand_light"
                             android:text="@string/nrm_assento"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:id="@+id/assento_reserva" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -151,7 +156,8 @@
                             android:layout_height="20dp"
                             android:fontFamily="@font/quicksand_light"
                             android:text="@string/nome_reserva"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:id="@+id/nome_reserva"/>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -166,26 +172,28 @@
                             android:layout_height="20dp"
                             android:fontFamily="@font/quicksand_light"
                             android:text="@string/dia_reserva"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:id="@+id/dia_reserva"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/quicksand_bold"
-                            android:text="@string/assentos"
-                            android:textSize="18sp" />
+                            android:text="@string/horario"
+                            android:textSize="18sp"
+                            tools:ignore="TextSizeCheck" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:fontFamily="@font/quicksand_light"
-                            android:text="@string/nrm_assento"
-                            android:textSize="15sp" />
+                            android:text="@string/horario_reserva1"
+                            android:textSize="15sp"
+                            android:id="@+id/horario_reserva"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </ScrollView>
 
         </RelativeLayout>
-    </RelativeLayout>
-</RelativeLayout>
+    </FrameLayout>

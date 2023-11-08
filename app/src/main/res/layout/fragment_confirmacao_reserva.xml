@@ -43,13 +43,13 @@
                     android:orientation="horizontal"
                     tools:ignore="RtlHardcoded">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="20dp"
-                        android:layout_height="30dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="20dp"
                         android:clickable="true"
                         android:focusable="true"
-                        android:src="@mipmap/btt_x"
+                        android:background="@mipmap/btt_x"
                         tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 </LinearLayout>
@@ -60,12 +60,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/quicksand_bold"
-                android:padding="10dp"
                 android:text="@string/txt_confirmacao2"
                 android:textColor="#8F90A6"
                 android:textSize="13sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck"
+                />
 
 
             <LinearLayout
