@@ -147,4 +147,17 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="reserva_button" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:backgroundTint">#587370</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">180dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
 </resources>

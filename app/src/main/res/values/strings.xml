@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Maitre</string>
 
+<!--    Random -->
+    <string name="txt_reservas">Reservas</string>
+
     <!--    Menu footer-->
     <string name="menu_home">Home</string>
     <string name="menu_reservas">Reservas</string>
@@ -86,7 +89,6 @@
     <string name="perfil_user_name">Liz Smith</string>
     <string name="perfil_telefone">+1 – 4842989351</string>
     <string name="perfil_email">liz@gmail.com</string>
-    <string name="perfil_reserva">Reservas</string>
     <string name="perfil_txt_reserva">Verifique suas próximas reservas aqui</string>
     <string name="perfil_reservar">Reservar agora</string>
     <string name="perfil_alterar">Alterar perfil</string>
@@ -97,6 +99,12 @@
 <!--    ?. Cancelamento reserva-->
     <string name="txt_cancelamento">Selecione a opção desejada</string>
     <string name="btt_feedback">Feedback</string>
+
+<!--    ?.  Feedback-->
+
+    <string name="txt_feedback">Nos conte a sua experiência sobre a sua reserva: </string>
+    <string name="txt_feedback2"> Escreva aqui sua experiência ....</string>
+    <string name="btt_reserva"> Confirmar reserva</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
