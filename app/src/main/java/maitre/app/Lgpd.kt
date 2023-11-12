@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Reserva.newInstance] factory method to
+ * Use the [Lgpd.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Reserva : Fragment() {
+class Lgpd : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,18 +34,8 @@ class Reserva : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_reserva, container, false)
-
+        return inflater.inflate(R.layout.fragment_lgpd, container, false)
     }
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        view.findViewById<Button>(R.id.btn_perfil_reservar).setOnClickListener {
-//            (activity as MainActivity).replaceFragment(CriacaoReserva())
-//        }
-//    }
-
-
 
     companion object {
         /**
@@ -55,12 +44,12 @@ class Reserva : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Reserva.
+         * @return A new instance of fragment Lgpd.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Reserva().apply {
+            Lgpd().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

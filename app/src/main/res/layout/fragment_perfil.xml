@@ -43,7 +43,7 @@
         android:orientation="vertical">
         <Button
             android:id="@+id/btn_perfil_reservas"
-            android:text="Reservas"
+            android:text="@string/txt_reservas"
             android:drawableLeft="@drawable/ic_favorite"
             style="@style/perfil_button"/>
         <Button

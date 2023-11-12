@@ -45,7 +45,8 @@
                     android:clickable="true"
                     android:text="@string/login_txt_cadastro"
                     android:textColor="@color/marrom"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/quicksand_bold"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
