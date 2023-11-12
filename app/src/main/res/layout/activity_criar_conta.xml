@@ -45,7 +45,8 @@
                     android:clickable="true"
                     android:text="@string/formulario_txt_entrar"
                     android:textColor="@color/verdeAgua"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/quicksand_bold"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

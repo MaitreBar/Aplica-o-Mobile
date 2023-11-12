@@ -38,13 +38,13 @@ class Reserva : Fragment() {
         return inflater.inflate(R.layout.fragment_reserva, container, false)
 
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<Button>(R.id.btn_perfil_reservar).setOnClickListener {
-            (activity as MainActivity).replaceFragment(CriacaoReserva())
-        }
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        view.findViewById<Button>(R.id.btn_perfil_reservar).setOnClickListener {
+//            (activity as MainActivity).replaceFragment(CriacaoReserva())
+//        }
+//    }
 
 
 
