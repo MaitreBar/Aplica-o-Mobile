@@ -3,6 +3,8 @@
     <style name="Base.Theme.Maitre" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="Theme.Maitre" parent="Base.Theme.Maitre"/>
@@ -12,7 +14,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/old_standard_tt_regular</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/branco</item>
         <item name="android:textSize">36sp</item>
         <item name="android:layout_marginLeft">30dp</item>
         <item name="android:textStyle">bold</item>
@@ -21,7 +23,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/quicksand_regular</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/branco</item>
         <item name="android:textSize">18sp</item>
     </style>
     <style name="button_titulo_cabecalho">
@@ -33,7 +35,7 @@
         <item name="android:layout_gravity">right</item>
         <item name="android:layout_marginTop">-45dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:backgroundTint">#00000000</item>
+        <item name="android:backgroundTint">@color/transparente</item>
     </style>
 
     <!--    Formulários-->
@@ -52,7 +54,8 @@
         <item name="android:paddingLeft">10dp</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/cinza</item>
-        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
+        <item name="android:layout_gravity">right|center</item>
     </style>
     <style name="button_formulario">
         <item name="android:layout_width">match_parent</item>
@@ -60,7 +63,7 @@
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/branco</item>
         <item name="android:fontFamily">@font/quicksand_semibold</item>
         <item name="android:layout_marginVertical">20dp</item>
     </style>
@@ -118,7 +121,7 @@
     <!--    ?. Perfil-->
     <style name="perfil_user_name">
         <item name="android:textColor">@color/verdeEscuro</item>
-        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -138,15 +141,78 @@
     <style name="perfil_button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">#00000000</item>
+        <item name="android:background">@color/transparente</item>
         <item name="android:textColor">@color/verdeEscuro</item>
         <item name="android:textSize">18sp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_marginVertical">10dp</item>
         <item name="android:drawableRight">@drawable/ic_arrow_right</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
     </style>
 
+<!--    Criação reserva-->
+    <style name="button_superior_voltar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/transparente</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">-25dp</item>
+        <item name="android:drawableLeft">@drawable/ic_arrow_back_black</item>
+        <item name="android:hint">@string/reservar_estabelecimento</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textColorHint">@color/verdeEscuro</item>
+    </style>
+    <style name="txt_reservar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:layout_marginVertical">10dp</item>
+    </style>
+    <style name="titulo_reservar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:layout_marginVertical">10dp</item>
+    </style>
+    <style name="button_layout_dia_reserva"> <!--    Botões de seleção para dia da reserva-->
+        <item name="android:background">@drawable/border_linear_layout</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="layout_txt_semana">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="layout_dia_semana">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="button_layout_horario_reserva"> <!--    Botões de seleção para horário da reserva-->
+        <item name="android:background">@drawable/border_linear_layout</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColorHint">@color/preto</item>
+    </style>
+=======
     <style name="reserva_button" parent="Widget.Material3.Button.OutlinedButton">
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
@@ -160,4 +226,5 @@
         <item name="android:minWidth">0dp</item>
     </style>
 
+>>>>>>> eb8110293cfa4f59a6e9b1998d4b50b89f395e98
 </resources>
