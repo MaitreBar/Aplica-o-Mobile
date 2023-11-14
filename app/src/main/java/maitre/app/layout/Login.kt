@@ -7,12 +7,12 @@ import android.widget.Toast
 import maitre.app.data.Usuario
 import maitre.app.databinding.ActivityLoginBinding
 import maitre.app.utils.Endpoints
+import maitre.app.utils.Sessao
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.Optional
 
 class Login : AppCompatActivity() {
 
@@ -47,19 +47,20 @@ class Login : AppCompatActivity() {
             .create(Endpoints::class.java)
 
         api.getLogin(binding.etEmail.text.toString(), binding.etSenha.text.toString()).enqueue(object :
-            Callback<Optional<Usuario>> {
+            Callback<Usuario> {
             override fun onResponse(
-                call: Call<Optional<Usuario>>,
-                response: Response<Optional<Usuario>>
+                call: Call<Usuario>,
+                response: Response<Usuario>
             ) {
                 if(response.isSuccessful){
                     Toast.makeText(baseContext, "Usuário logado com sucesso", Toast.LENGTH_SHORT).show()
+                    Sessao.usuario = response.body()!!
                     val intent = Intent(this@Login, MainActivity::class.java)
                     startActivity(intent)
                 }
             }
 
-            override fun onFailure(call: Call<Optional<Usuario>>, t: Throwable) {
+            override fun onFailure(call: Call<Usuario>, t: Throwable) {
                 Toast.makeText(baseContext, t.message, Toast.LENGTH_SHORT).show()
             }
 
