@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlterarPerfil"
+    tools:context=".layout.AlterarPerfil"
+    android:id="@+id/layout_atualizar_perfil"
     android:orientation="vertical">
 
     <!--    Cabeçalho-->
@@ -57,7 +58,7 @@
                 android:text="@string/formulario_nascimento"/>
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_atualizar_dtNasc"
-                android:inputType="number"
+                android:focusable="false"
                 app:mask="##/##/####"
                 style="@style/input_formulario"
                 android:hint="@string/formulario_hint_nascimento"
@@ -69,6 +70,7 @@
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_atualizar_rg"
                 app:mask="##.###.###-A"
+                android:focusable="false"
                 style="@style/input_formulario"
                 android:hint="@string/formulario_hint_rg"
                 android:background="@drawable/rounded_edit_text"/>
@@ -78,7 +80,7 @@
                 android:text="@string/formulario_cpf"/>
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_atualizar_cpf"
-                android:inputType="number"
+                android:focusable="false"
                 style="@style/input_formulario"
                 android:hint="@string/formulario_hint_cpf"
                 app:mask="###.###.###-##"
