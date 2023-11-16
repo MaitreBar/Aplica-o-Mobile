@@ -9,19 +9,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import maitre.app.R
+import maitre.app.databinding.FragmentPerfilBinding
 import maitre.app.utils.Sessao.usuario
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Perfil.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Perfil : Fragment() {
+
+    val binding by lazy {
+        FragmentPerfilBinding.inflate(layoutInflater)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,15 +25,14 @@ class Perfil : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_perfil, container, false)
 
-        Toast.makeText(context, "$usuario", Toast.LENGTH_LONG)
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         Toast.makeText(context, "$usuario", Toast.LENGTH_LONG).show()
+
+        binding.tvPerfilUserName.text = usuario.nome
 
         view.findViewById<Button>(R.id.btn_perfil_reservas).setOnClickListener {
             (activity as MainActivity).binding.bottomNavigationView.selectedItemId =
@@ -55,15 +49,6 @@ class Perfil : Fragment() {
 
         view.findViewById<Button>(R.id.btn_perfil_alterar).setOnClickListener {
             (activity as MainActivity).replaceFragment(AlterarPerfil())
-
-            Toast.makeText(context, "$usuario", Toast.LENGTH_LONG).show()
-
-            view.findViewById<EditText>(R.id.et_atualizar_nome).setText(usuario.nome)
-            view.findViewById<EditText>(R.id.et_atualizar_dtNasc).setText(usuario.dtNasc)
-            view.findViewById<EditText>(R.id.et_atualizar_rg).setText(usuario.rg)
-            view.findViewById<EditText>(R.id.et_atualizar_cpf).setText(usuario.cpf)
-            view.findViewById<EditText>(R.id.et_atualizar_celular).setText(usuario.celular)
-            view.findViewById<EditText>(R.id.et_atualizar_email).setText(usuario.email)
 
         }
 
