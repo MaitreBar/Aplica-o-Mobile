@@ -25,14 +25,14 @@ class CriarConta : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvIrLogin.setOnClickListener {
-            val intent = Intent(this, CriarConta::class.java)
-            Toast.makeText(baseContext, "Redirecionando para tela de cadastro", Toast.LENGTH_SHORT)
+            val intent = Intent(this, Login::class.java)
+            Toast.makeText(baseContext, "Voltando para tela de Login", Toast.LENGTH_SHORT)
             startActivity(intent)
         }
 
         binding.tvSetaLogin.setOnClickListener {
-            val intent = Intent(this, CriarConta::class.java)
-            Toast.makeText(baseContext, "Redirecionando para tela de cadastro", Toast.LENGTH_SHORT)
+            val intent = Intent(this, Login::class.java)
+            Toast.makeText(baseContext, "Voltando para tela de login", Toast.LENGTH_SHORT)
             startActivity(intent)
         }
 

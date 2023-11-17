@@ -5,6 +5,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.PUT
 import retrofit2.http.Path
 
 interface Endpoints {
@@ -15,4 +16,6 @@ interface Endpoints {
     @POST("/usuarios")
     fun cadastrar(@Body usuario: Usuario) : Call<Usuario>
 
+    @PUT("/usuarios")
+    fun atualizar(@Body usuario: Usuario) : Call<Usuario>
 }

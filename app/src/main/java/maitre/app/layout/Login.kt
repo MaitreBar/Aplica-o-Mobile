@@ -34,7 +34,7 @@ class Login : AppCompatActivity() {
         }
 
         binding.tvSetaHome.setOnClickListener {
-            val intent = Intent(this, CriarConta::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
     }
