@@ -55,6 +55,7 @@ class Login : AppCompatActivity() {
                 if(response.isSuccessful){
                     Toast.makeText(baseContext, "Usuário logado com sucesso", Toast.LENGTH_SHORT).show()
                     Sessao.usuario = response.body()!!
+                    Toast.makeText(baseContext, "${Sessao.usuario}", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@Login, MainActivity::class.java)
                     startActivity(intent)
                 }

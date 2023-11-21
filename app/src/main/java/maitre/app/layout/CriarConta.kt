@@ -7,6 +7,7 @@ import android.widget.Toast
 import maitre.app.data.Usuario
 import maitre.app.databinding.ActivityCriarContaBinding
 import maitre.app.utils.Endpoints
+import maitre.app.utils.Sessao
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -39,6 +40,7 @@ class CriarConta : AppCompatActivity() {
         binding.btCadastrar.setOnClickListener {
             if (binding.etCadastroSenha.text.toString().equals(binding.etCadastroConfirmarSenha.text.toString())) {
                 val usuarioNovo = Usuario(
+                    Sessao.usuario?.id!!,
                     binding.etCadastroNome.text.toString(),
                     binding.etCadastroEmail.text.toString(),
                     binding.etCadastroCpf.text.toString(),

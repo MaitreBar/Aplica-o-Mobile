@@ -16,6 +16,6 @@ interface Endpoints {
     @POST("/usuarios")
     fun cadastrar(@Body usuario: Usuario) : Call<Usuario>
 
-    @PUT("/usuarios")
-    fun atualizar(@Body usuario: Usuario) : Call<Usuario>
+    @PUT("/usuarios/{id}")
+    fun atualizar(@Body usuario: Usuario, @Path("id") id: String) : Call<Usuario>
 }

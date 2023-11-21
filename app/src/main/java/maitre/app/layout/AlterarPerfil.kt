@@ -1,15 +1,14 @@
 package maitre.app.layout
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.text.set
 import maitre.app.R
 import maitre.app.data.Usuario
 import maitre.app.databinding.FragmentAlterarPerfilBinding
@@ -45,18 +44,18 @@ class AlterarPerfil : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(context, "$usuario", Toast.LENGTH_LONG).show()
 
         view.findViewById<EditText>(R.id.et_atualizar_nome)?.text = usuario?.nome!!.toEditable()
-        view.findViewById<EditText>(R.id.et_atualizar_dtNasc)?.text = usuario?.dtNasc!!.toEditable()
+        view.findViewById<EditText>(R.id.et_atualizar_dtNasc)?.text = LocalDate.parse(usuario?.dtNasc!!).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")).toEditable()
         view.findViewById<EditText>(R.id.et_atualizar_rg)?.text = usuario?.rg!!.toEditable()
         view.findViewById<EditText>(R.id.et_atualizar_cpf)?.text = usuario?.cpf!!.toEditable()
         view.findViewById<EditText>(R.id.et_atualizar_celular)?.text = usuario?.celular!!.toEditable()
         view.findViewById<EditText>(R.id.et_atualizar_email)?.text = usuario?.email!!.toEditable()
 
-    binding.btAtualizar.setOnClickListener {
+    view.findViewById<Button>(R.id.bt_atualizar)?.setOnClickListener {
         if (binding.etSenhaAntiga.text.toString().equals(usuario?.senha) && binding.etAtualizarSenha.text.toString().equals(binding.etAtualizarConfirmarSenha.text.toString())) {
             val usuarioAtualizado = Usuario(
+                usuario?.id!!,
                 binding.etAtualizarNome.text.toString(),
                 binding.etAtualizarEmail.text.toString(),
                 usuario?.cpf!!,
@@ -66,11 +65,11 @@ class AlterarPerfil : Fragment() {
                 binding.etAtualizarSenha.text.toString(),
                 usuario?.reservas
             )
-
             atualiza(usuarioAtualizado)
 
-        } else if (binding.etSenhaAntiga.text == null && binding.etAtualizarSenha.text == null && binding.etAtualizarConfirmarSenha.text == null){
+        } else if ((binding.etSenhaAntiga.text == null && binding.etAtualizarSenha.text == null && binding.etAtualizarConfirmarSenha.text == null) || (binding.etSenhaAntiga.text.toString().equals("") && binding.etAtualizarSenha.text.toString().equals("") && binding.etAtualizarConfirmarSenha.text.toString().equals(""))){
             val usuarioAtualizado = Usuario(
+                usuario?.id!!,
                 binding.etAtualizarNome.text.toString(),
                 binding.etAtualizarEmail.text.toString(),
                 usuario?.cpf!!,
@@ -80,34 +79,37 @@ class AlterarPerfil : Fragment() {
                 usuario?.senha!!,
                 usuario?.reservas
             )
-
             atualiza(usuarioAtualizado)
-        } else {
+
+        } else if(!binding.etAtualizarSenha.text.toString().equals(binding.etAtualizarConfirmarSenha.text.toString())) {
             binding.etAtualizarConfirmarSenha.setError("As senhas não conferem")
+
+        } else if (!binding.etSenhaAntiga.text.toString().equals(usuario?.senha)) {
+            binding.etSenhaAntiga.setError("A senha está incorreta")
+
         }
     }
 }
 
-fun atualiza(u : Usuario){
-    val api = Retrofit.Builder()
-        .baseUrl("http://44.213.7.88:8080/")
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
-        .create(Endpoints::class.java)
+    fun atualiza(u : Usuario){
+        val api = Retrofit.Builder()
+            .baseUrl("http://44.213.7.88:8080/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(Endpoints::class.java)
 
-    api.atualizar(u).enqueue(object : Callback<Usuario> {
-        override fun onResponse(call: Call<Usuario>, response: Response<Usuario>) {
-            if(response.isSuccessful) {
-                Toast.makeText(context, "Cadastro atualizado com sucesso", Toast.LENGTH_SHORT)
+        api.atualizar(u, usuario?.id!!).enqueue(object : Callback<Usuario> {
+            override fun onResponse(call: Call<Usuario>, response: Response<Usuario>) {
+                if(response.isSuccessful) {
+                    usuario = u
+                    Toast.makeText(context, "Cadastro atualizado com sucesso", Toast.LENGTH_SHORT)
+                }
             }
-        }
 
-        override fun onFailure(call: Call<Usuario>, t: Throwable) {
-            Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
-        }
+            override fun onFailure(call: Call<Usuario>, t: Throwable) {
+                Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
+            }
 
+        })
     }
-    )
-
-}
 }
