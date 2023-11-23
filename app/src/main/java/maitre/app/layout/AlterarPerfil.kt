@@ -24,9 +24,7 @@ import java.time.format.DateTimeFormatter
 
 class AlterarPerfil : Fragment() {
 
-    val binding by lazy {
-        FragmentAlterarPerfilBinding.inflate(layoutInflater)
-    }
+    lateinit var binding: FragmentAlterarPerfilBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -38,8 +36,10 @@ class AlterarPerfil : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_alterar_perfil, container, false)
-}
+        // apagar o conteúdo que vem e criar essas 2 linhas para poder usar binding numa fragment
+        binding = FragmentAlterarPerfilBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -67,7 +67,7 @@ class AlterarPerfil : Fragment() {
             )
             atualiza(usuarioAtualizado)
 
-        } else if ((binding.etSenhaAntiga.text == null && binding.etAtualizarSenha.text == null && binding.etAtualizarConfirmarSenha.text == null) || (binding.etSenhaAntiga.text.toString().equals("") && binding.etAtualizarSenha.text.toString().equals("") && binding.etAtualizarConfirmarSenha.text.toString().equals(""))){
+        } else if ((binding.etSenhaAntiga.text.isBlank() && binding.etAtualizarSenha.text == null && binding.etAtualizarConfirmarSenha.text == null) || (binding.etSenhaAntiga.text.toString().equals("") && binding.etAtualizarSenha.text.toString().equals("") && binding.etAtualizarConfirmarSenha.text.toString().equals(""))){
             val usuarioAtualizado = Usuario(
                 usuario?.id!!,
                 binding.etAtualizarNome.text.toString(),
