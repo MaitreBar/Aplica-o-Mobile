@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter
 
 class CriarConta : AppCompatActivity() {
 
-    val binding by lazy {
+    private val binding by lazy {
         ActivityCriarContaBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,18 +27,18 @@ class CriarConta : AppCompatActivity() {
 
         binding.tvIrLogin.setOnClickListener {
             val intent = Intent(this, Login::class.java)
-            Toast.makeText(baseContext, "Voltando para tela de Login", Toast.LENGTH_SHORT)
+            Toast.makeText(baseContext, "Voltando para tela de Login", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 
         binding.tvSetaLogin.setOnClickListener {
             val intent = Intent(this, Login::class.java)
-            Toast.makeText(baseContext, "Voltando para tela de login", Toast.LENGTH_SHORT)
+            Toast.makeText(baseContext, "Voltando para tela de login", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 
         binding.btCadastrar.setOnClickListener {
-            if (binding.etCadastroSenha.text.toString().equals(binding.etCadastroConfirmarSenha.text.toString())) {
+            if (binding.etCadastroSenha.text.toString() == binding.etCadastroConfirmarSenha.text.toString()) {
                 val usuarioNovo = Usuario(
                     Sessao.usuario?.id!!,
                     binding.etCadastroNome.text.toString(),
@@ -56,12 +56,12 @@ class CriarConta : AppCompatActivity() {
 
                 cadastrar(usuarioNovo)
             } else {
-                binding.etCadastroConfirmarSenha.setError("As senhas não conferem")
+                binding.etCadastroConfirmarSenha.error = "As senhas não conferem"
             }
         }
     }
 
-    fun cadastrar(u : Usuario){
+    private fun cadastrar(u : Usuario){
         val api = Retrofit.Builder()
             .baseUrl("http://44.213.7.88:8080/")
             .addConverterFactory(GsonConverterFactory.create())

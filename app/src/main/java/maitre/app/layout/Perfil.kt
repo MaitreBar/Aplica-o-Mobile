@@ -16,10 +16,6 @@ import maitre.app.utils.Sessao.usuario
 
 class Perfil : Fragment() {
 
-    val binding by lazy {
-        FragmentPerfilBinding.inflate(layoutInflater)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }

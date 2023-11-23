@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import maitre.app.CardEstabelecimentoFragment
 import maitre.app.R
 import maitre.app.data.Estabelecimento
-import maitre.app.data.Usuario
-import maitre.app.databinding.FragmentAlterarPerfilBinding
 import maitre.app.databinding.FragmentInicialBinding
 import maitre.app.utils.NetworkUtils
 import maitre.app.utils.Sessao
@@ -40,9 +37,8 @@ class Inicial : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val getEstabelecimentos = NetworkUtils.getRetrofitInstance(Sessao.urlApi).getEstabelecimentos()
-
-        getEstabelecimentos.enqueue(object : Callback<List<Estabelecimento>> {
+        NetworkUtils.getRetrofitInstance(Sessao.urlApi)
+            .getEstabelecimentos().enqueue(object : Callback<List<Estabelecimento>> {
             override fun onResponse(
                 call: Call<List<Estabelecimento>>,
                 response: Response<List<Estabelecimento>>

@@ -13,6 +13,8 @@ import maitre.app.R
 import maitre.app.data.Usuario
 import maitre.app.databinding.FragmentAlterarPerfilBinding
 import maitre.app.utils.Endpoints
+import maitre.app.utils.NetworkUtils
+import maitre.app.utils.Sessao
 import maitre.app.utils.Sessao.usuario
 import retrofit2.Call
 import retrofit2.Callback
@@ -25,9 +27,6 @@ import java.time.format.DateTimeFormatter
 class AlterarPerfil : Fragment() {
 
     lateinit var binding: FragmentAlterarPerfilBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     fun String.toEditable(): Editable =  Editable.Factory.getInstance().newEditable(this)
 
@@ -35,7 +34,7 @@ class AlterarPerfil : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // apagar o conteúdo que vem e criar essas 2 linhas para poder usar binding numa fragment
         binding = FragmentAlterarPerfilBinding.inflate(inflater, container, false)
         return binding.root
@@ -67,7 +66,7 @@ class AlterarPerfil : Fragment() {
             )
             atualiza(usuarioAtualizado)
 
-        } else if ((binding.etSenhaAntiga.text.isBlank() && binding.etAtualizarSenha.text == null && binding.etAtualizarConfirmarSenha.text == null) || (binding.etSenhaAntiga.text.toString().equals("") && binding.etAtualizarSenha.text.toString().equals("") && binding.etAtualizarConfirmarSenha.text.toString().equals(""))){
+        } else if (binding.etSenhaAntiga.text.isBlank() && binding.etAtualizarSenha.text.isBlank() && binding.etAtualizarConfirmarSenha.text.isBlank()){
             val usuarioAtualizado = Usuario(
                 usuario?.id!!,
                 binding.etAtualizarNome.text.toString(),
@@ -81,24 +80,19 @@ class AlterarPerfil : Fragment() {
             )
             atualiza(usuarioAtualizado)
 
-        } else if(!binding.etAtualizarSenha.text.toString().equals(binding.etAtualizarConfirmarSenha.text.toString())) {
-            binding.etAtualizarConfirmarSenha.setError("As senhas não conferem")
+        } else if(binding.etAtualizarSenha.text.toString() != binding.etAtualizarConfirmarSenha.text.toString()) {
+            binding.etAtualizarConfirmarSenha.error = "As senhas não conferem"
 
-        } else if (!binding.etSenhaAntiga.text.toString().equals(usuario?.senha)) {
-            binding.etSenhaAntiga.setError("A senha está incorreta")
+        } else if (binding.etSenhaAntiga.text.toString() != usuario?.senha) {
+            binding.etSenhaAntiga.error = "A senha está incorreta"
 
         }
     }
 }
 
     fun atualiza(u : Usuario){
-        val api = Retrofit.Builder()
-            .baseUrl("http://44.213.7.88:8080/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(Endpoints::class.java)
-
-        api.atualizar(u, usuario?.id!!).enqueue(object : Callback<Usuario> {
+        NetworkUtils.getRetrofitInstance(Sessao.urlApi)
+            .atualizar(u, usuario?.id!!).enqueue(object : Callback<Usuario> {
             override fun onResponse(call: Call<Usuario>, response: Response<Usuario>) {
                 if(response.isSuccessful) {
                     usuario = u

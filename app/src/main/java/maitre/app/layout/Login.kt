@@ -7,6 +7,7 @@ import android.widget.Toast
 import maitre.app.data.Usuario
 import maitre.app.databinding.ActivityLoginBinding
 import maitre.app.utils.Endpoints
+import maitre.app.utils.NetworkUtils
 import maitre.app.utils.Sessao
 import retrofit2.Call
 import retrofit2.Callback
@@ -16,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class Login : AppCompatActivity() {
 
-    val binding by lazy {
+    private val binding by lazy {
         ActivityLoginBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,7 @@ class Login : AppCompatActivity() {
 
         binding.tvIrCadastro.setOnClickListener {
             val intent = Intent(this, CriarConta::class.java)
-            Toast.makeText(baseContext, "Redirecionando para tela de cadastro", Toast.LENGTH_SHORT)
+            Toast.makeText(baseContext, "Redirecionando para tela de cadastro", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 
@@ -39,14 +40,9 @@ class Login : AppCompatActivity() {
         }
     }
 
-    fun logar() {
-        val api = Retrofit.Builder()
-            .baseUrl("http://44.213.7.88:8080/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(Endpoints::class.java)
-
-        api.getLogin(binding.etEmail.text.toString(), binding.etSenha.text.toString()).enqueue(object :
+    private fun logar() {
+        NetworkUtils.getRetrofitInstance(Sessao.urlApi)
+            .getLogin(binding.etEmail.text.toString(), binding.etSenha.text.toString()).enqueue(object :
             Callback<Usuario> {
             override fun onResponse(
                 call: Call<Usuario>,
