@@ -100,17 +100,13 @@
             android:text="@string/reservar_txt_horario"/>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp">
-            <ScrollView
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="130dp"
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -225,8 +221,8 @@
                             android:hint="@string/reservar_horario"/>
                     </LinearLayout>
                 </LinearLayout>
-            </ScrollView>
-        </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
 
 
         <TextView
