@@ -70,8 +70,7 @@
     <style name="style_navigation_bottom">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">#FBFBFB</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/branco</item>
     </style>
 
     <!--    4. Criar conta-->
