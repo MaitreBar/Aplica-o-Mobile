@@ -25,6 +25,6 @@ class CardEstabelecimentoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.tvEstabelecimentoNome.text = arguments?.getString("nome")
-    }
 
+    }
 }

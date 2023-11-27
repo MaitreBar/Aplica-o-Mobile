@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import maitre.app.R
-import maitre.app.Reserva
 import maitre.app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

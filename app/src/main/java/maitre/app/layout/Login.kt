@@ -6,14 +6,11 @@ import android.os.Bundle
 import android.widget.Toast
 import maitre.app.data.Usuario
 import maitre.app.databinding.ActivityLoginBinding
-import maitre.app.utils.Endpoints
 import maitre.app.utils.NetworkUtils
 import maitre.app.utils.Sessao
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class Login : AppCompatActivity() {
 
@@ -51,7 +48,6 @@ class Login : AppCompatActivity() {
                 if(response.isSuccessful){
                     Toast.makeText(baseContext, "Usuário logado com sucesso", Toast.LENGTH_SHORT).show()
                     Sessao.usuario = response.body()!!
-                    Toast.makeText(baseContext, "${Sessao.usuario}", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@Login, MainActivity::class.java)
                     startActivity(intent)
                 }

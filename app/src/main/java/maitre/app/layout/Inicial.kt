@@ -16,11 +16,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Inicial.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Inicial : Fragment() {
 
     lateinit var binding: FragmentInicialBinding
@@ -28,7 +23,7 @@ class Inicial : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentInicialBinding.inflate(inflater, container, false)
         return binding.root
