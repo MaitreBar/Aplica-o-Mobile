@@ -26,11 +26,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical">
                 <TextView
+                    android:id="@+id/tv_perfil_user_celular"
                     style="@style/perfil_info_user"
                     android:text="@string/perfil_telefone"/>
                 <ImageView
                     style="@style/perfil_circle_info_user"/>
                 <TextView
+                    android:id="@+id/tv_perfil_user_email"
                     style="@style/perfil_info_user"
                     android:text="@string/perfil_email" />
             </LinearLayout>
