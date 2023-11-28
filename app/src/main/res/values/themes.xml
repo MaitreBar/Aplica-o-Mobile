@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:fontFamily">@font/quicksand_regular</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:windowBackground">@color/branco</item>
     </style>
 
     <style name="Theme.Maitre" parent="Base.Theme.Maitre"/>
@@ -69,8 +70,7 @@
     <style name="style_navigation_bottom">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">#FBFBFB</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/branco</item>
     </style>
 
     <!--    4. Criar conta-->

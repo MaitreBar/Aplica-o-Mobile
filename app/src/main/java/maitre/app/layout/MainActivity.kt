@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.home_nav -> replaceFragment(Inicial())
+                R.id.home_nav -> replaceFragment(VisaoEstabelecimento())
                 R.id.reserva_nav -> replaceFragment(Reserva())
                 R.id.perfil_nav -> replaceFragment(Perfil())
                 else ->{
