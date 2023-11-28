@@ -5,6 +5,7 @@
     <string name="txt_reservas">Reservas</string>
     <string name="txt_cifroes">$$$</string>
     <string name="txt_nota_estabelecimento">5.0</string>
+    <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
 
     <!--    Menu footer-->
     <string name="menu_home">Home</string>
