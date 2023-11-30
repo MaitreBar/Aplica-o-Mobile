@@ -37,6 +37,27 @@
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:backgroundTint">@color/transparente</item>
     </style>
+    <style name="tw_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/cinza</item>
+    </style>
+    <style name="tw_user_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="tw_title_medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginVertical">20sp</item>
+    </style>
 
     <!--    Formulários-->
     <style name="titulo_input_formulario">
@@ -50,7 +71,6 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:paddingLeft">10dp</item>
-        <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/preto</item>
         <item name="android:layout_marginVertical">2dp</item>
         <item name="android:layout_gravity">right|center</item>
@@ -118,12 +138,6 @@
     </style>
 
     <!--    ?. Perfil-->
-    <style name="perfil_user_name">
-        <item name="android:textColor">@color/verdeEscuro</item>
-        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
     <style name="perfil_info_user">
         <item name="android:textColor">@color/cinza</item>
         <item name="android:fontFamily">@font/quicksand_regular</item>

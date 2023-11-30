@@ -16,9 +16,7 @@
             android:paddingBottom="20dp"
             android:background="@drawable/border_bottom">
             <TextView
-                style="@style/perfil_user_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/tw_user_name"
                 android:text="@string/perfil_user_name"
                 android:id="@+id/tv_perfil_user_name"/>
 
@@ -29,13 +27,13 @@
                 android:gravity="center_vertical">
                 <TextView
                     android:id="@+id/tv_perfil_user_celular"
-                    style="@style/perfil_info_user"
+                    style="@style/tw_small"
                     android:text="@string/perfil_telefone"/>
                 <ImageView
                     style="@style/perfil_circle_info_user"/>
                 <TextView
                     android:id="@+id/tv_perfil_user_email"
-                    style="@style/perfil_info_user"
+                    style="@style/tw_small"
                     android:text="@string/perfil_email" />
             </LinearLayout>
         </LinearLayout>

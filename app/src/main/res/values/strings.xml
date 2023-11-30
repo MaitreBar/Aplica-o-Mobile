@@ -7,6 +7,9 @@
     <string name="txt_cifroes">$$$</string>
     <string name="txt_nota_estabelecimento">5.0</string>
     <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
+    <string name="txt_bem_vindo">Bem vindo (a)</string>
+    <string name="txt_pesquisar">Pesquisar</string>
+    <string name="txt_estabelecimentos">Estabelecimentos</string>
 
     <!--    Menu footer-->
     <string name="menu_home">Home</string>
