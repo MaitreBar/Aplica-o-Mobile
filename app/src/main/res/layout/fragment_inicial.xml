@@ -194,70 +194,12 @@
 
 <!--        Container lista estabelecimentos-->
         <LinearLayout
+            android:id="@+id/gl_estabelecimentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 <!--            Divisão para dois cards-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-<!--                Card do estabelecimento-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginHorizontal="10dp"
-                    android:background="@drawable/bottom_navigation_stroke"
-                    android:paddingBottom="5dp">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:src="@mipmap/bar_um"
-                        android:scaleType="centerCrop"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Beerwings"
-                        android:fontFamily="@font/old_standard_tt_bold"
-                        android:textSize="24sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tres_cifroes"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:paddingBottom="5dp">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:src="@mipmap/bar_um"
-                        android:scaleType="centerCrop"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Beerwings"
-                        android:fontFamily="@font/old_standard_tt_bold"
-                        android:textSize="24sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tres_cifroes"/>
-                </LinearLayout>
-            </LinearLayout>
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:columnCount="2"
-                android:rowCount="1"
-                android:id="@+id/gl_estabelecimentos">
-            </GridLayout>
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
