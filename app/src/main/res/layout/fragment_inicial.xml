@@ -16,14 +16,10 @@
             android:orientation="vertical"
             android:layout_marginVertical="20dp">
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bem vindo (a)"
-                android:textColor="@color/cinza"/>
+                style="@style/tw_small"
+                android:text="@string/txt_bem_vindo"/>
             <TextView
-                style="@style/perfil_user_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/tw_user_name"
                 android:text="@string/perfil_user_name"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,21 +27,18 @@
                 android:layout_marginVertical="10dp"
                 android:gravity="center_vertical">
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:id="@+id/ed_pesquisar_inicial"
                     style="@style/input_formulario"
                     android:background="@drawable/rounded_edit_text"
-                    android:hint="Pesquisar"
-                    android:textColor="@color/preto"
-                    android:padding="13dp"
-                    android:gravity="center"/>
+                    android:layout_weight="1"
+                    android:hint="@string/txt_pesquisar"
+                    android:gravity="center_vertical|center_horizontal"/>
                 <ImageButton
                     android:id="@+id/btn_pesquisar_inicial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_search_grey"
-                    android:backgroundTint="#00000000"/>
+                    android:backgroundTint="@color/transparente"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -92,13 +85,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="Categorias"
-                android:gravity="center"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textSize="18sp"
-                android:layout_marginVertical="20dp"/>
+                style="@style/tw_title_medium"/>
 <!--            Grupo de botões tipo de comida-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,13 +172,8 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Estabelecimentos"
-            android:gravity="center"
-            android:fontFamily="@font/old_standard_tt_bold"
-            android:textSize="18sp"
-            android:layout_marginVertical="20dp"/>
+            android:text="@string/txt_estabelecimentos"
+            style="@style/tw_title_medium"/>
 
 <!--        Container lista estabelecimentos-->
         <LinearLayout

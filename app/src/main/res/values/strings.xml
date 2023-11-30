@@ -7,6 +7,9 @@
     <string name="txt_cifroes">$$$</string>
     <string name="txt_nota_estabelecimento">5.0</string>
     <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
+    <string name="txt_bem_vindo">Bem vindo (a)</string>
+    <string name="txt_pesquisar">Pesquisar</string>
+    <string name="txt_estabelecimentos">Estabelecimentos</string>
 
     <!--    Menu footer-->
     <string name="menu_home">Home</string>
@@ -51,7 +54,7 @@
     <string name="txt_lgpd2">Confirma saber que nosso sistema está de acordo com a lei LGPD   nº 13.853, de 2019</string>
     <string name="btt_sim">Sim</string>
     <string name="btt_nao">Não</string>
-    <string name="aceite_lgpd">Aceite de política</string>
+    <string name="aceite_lgpd">Política de privacidade</string>
     <string name="txt_lgpd3">
 Ao utilizar este aplicativo, você concorda com os termos e condições descritos abaixo, referentes à coleta, uso e compartilhamento de seus dados pessoais, conforme estabelecido pela Lei Geral de Proteção de Dados (LGPD).
 
