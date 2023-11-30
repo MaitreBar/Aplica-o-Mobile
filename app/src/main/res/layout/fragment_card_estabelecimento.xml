@@ -5,53 +5,29 @@
     android:layout_height="match_parent"
     tools:context=".layout.CardEstabelecimentoFragment">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="7dp"
-        android:layout_weight="1">
-
-        <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:paddingBottom="5dp"
+        android:elevation="5dp">
+        <ImageView
             android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/bar_um"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="5dp">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@mipmap/bar_um"
-                android:scaleType="fitXY"/>
-            <TextView
-                android:id="@+id/tv_estabelecimento_nome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                android:text="Nome estabelecimento"
-                android:textStyle="bold"
-                android:gravity="center"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:text="@string/txt_cifroes" />
-                <ImageView style="@style/perfil_circle_info_user" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/ic_star" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_nota_estabelecimento" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            android:text="Beerwings"
+            android:fontFamily="@font/old_standard_tt_bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tres_cifroes"/>
+    </LinearLayout>
 </FrameLayout>
