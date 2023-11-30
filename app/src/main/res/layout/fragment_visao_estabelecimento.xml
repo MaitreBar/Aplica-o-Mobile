@@ -119,57 +119,37 @@
                 android:backgroundTint="@color/verdeEscuro">
             </Button>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Descrição"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textColor="@color/verdeEscuro"
-                android:layout_marginVertical="10dp"/>
+                style="@style/tw_title_medium"
+                android:text="Descrição"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center_horizontal|start"
                 android:text="bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Faixa de preço:"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textColor="@color/verdeEscuro"
-                android:layout_marginVertical="10dp"/>
+                style="@style/tw_title_medium"
+                android:text="Faixa de preço:"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tres_cifroes"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tag's"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textColor="@color/verdeEscuro"
-                android:layout_marginVertical="10dp"/>
+                style="@style/tw_title_medium"
+                android:text="Tag's"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Drinks"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mapa"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textColor="@color/verdeEscuro"
-                android:layout_marginVertical="10dp"/>
+                style="@style/tw_title_medium"
+                android:text="Mapa"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/cinza"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Feedback"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:textColor="@color/verdeEscuro"
-                android:layout_marginVertical="10dp"/>
+                style="@style/tw_title_medium"
+                android:text="Feedback"/>
 
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
