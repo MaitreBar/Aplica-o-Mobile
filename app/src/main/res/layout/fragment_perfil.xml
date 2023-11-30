@@ -10,9 +10,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="10dp"
             android:orientation="vertical"
-            android:layout_marginHorizontal="20dp">
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/border_bottom">
             <TextView
                 style="@style/perfil_user_name"
                 android:layout_width="match_parent"

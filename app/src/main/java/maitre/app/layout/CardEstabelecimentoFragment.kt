@@ -24,7 +24,7 @@ class CardEstabelecimentoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.tvEstabelecimentoNome.text = arguments?.getString("nome")
+//        binding.tvEstabelecimentoNome.text = arguments?.getString("nome")
 
     }
 }
