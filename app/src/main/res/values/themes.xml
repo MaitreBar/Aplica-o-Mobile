@@ -14,11 +14,10 @@
     <style name="titulo_cabecalho">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/old_standard_tt_regular</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:textColor">@color/branco</item>
         <item name="android:textSize">36sp</item>
-        <item name="android:layout_marginLeft">30dp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
     </style>
     <style name="subtitulo_cabecalho">
         <item name="android:layout_width">wrap_content</item>

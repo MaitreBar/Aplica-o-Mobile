@@ -54,7 +54,7 @@
     <string name="txt_lgpd2">Confirma saber que nosso sistema está de acordo com a lei LGPD   nº 13.853, de 2019</string>
     <string name="btt_sim">Sim</string>
     <string name="btt_nao">Não</string>
-    <string name="aceite_lgpd">Aceite de política</string>
+    <string name="aceite_lgpd">Política de privacidade</string>
     <string name="txt_lgpd3">
 Ao utilizar este aplicativo, você concorda com os termos e condições descritos abaixo, referentes à coleta, uso e compartilhamento de seus dados pessoais, conforme estabelecido pela Lei Geral de Proteção de Dados (LGPD).
 
