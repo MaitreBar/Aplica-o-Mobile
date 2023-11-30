@@ -28,7 +28,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
+                android:layout_marginVertical="10dp"
+                android:gravity="center_vertical">
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -37,13 +38,13 @@
                     android:background="@drawable/rounded_edit_text"
                     android:hint="Pesquisar"
                     android:textColor="@color/preto"
-                    android:drawableRight="@drawable/ic_search_grey"
-                    android:padding="10dp"
+                    android:padding="13dp"
                     android:gravity="center"/>
                 <ImageButton
+                    android:id="@+id/btn_pesquisar_inicial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_filter_grey"
+                    android:src="@drawable/ic_search_grey"
                     android:backgroundTint="#00000000"/>
             </LinearLayout>
         </LinearLayout>
@@ -58,28 +59,34 @@
                 android:layout_height="match_parent"
                 android:src="@mipmap/bar_um"
                 android:scaleType="fitXY"/>
+
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#66000000"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="Confira os lugares mais visitados"
                 android:textColor="@color/branco"
-                android:textSize="18sp"
-                android:fontFamily="@font/quicksand_bold"
-                android:layout_margin="20dp"
-                android:layout_weight="0.5"
-                android:background="#59000000"/>
+                android:textSize="18sp" />
+
             <Button
+                android:id="@+id/btn_mais_visitados_inicial"
                 style="@style/button_formulario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/verdeEscuro"
-                android:text="Avançar" />
+                android:text="Avançar"/>
         </RelativeLayout>
-<!--        Carrossel-->
 
-<!--        Container botões tipo de comida-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,12 +109,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp">
+                    android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/drinks_inicial"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
-                        android:src="@mipmap/bar_um"/>
+                        android:src="@mipmap/img_drink"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -120,12 +128,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp">
+                    android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/snacks_inicial"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
-                        android:src="@mipmap/bar_um"/>
+                        android:src="@mipmap/img_snack"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -138,12 +147,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp">
+                    android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/petiscos_inicial"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
-                        android:src="@mipmap/bar_um"/>
+                        android:src="@mipmap/img_petiscos"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -156,12 +166,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp">
+                    android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/sobremesas_inicial"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
-                        android:src="@mipmap/bar_um"/>
+                        android:src="@mipmap/img_sobremesa"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -186,14 +197,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+<!--            Divisão para dois cards-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--                Card do estabelecimento-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/bottom_navigation_stroke"
+                    android:paddingBottom="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/bar_um"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beerwings"
+                        android:fontFamily="@font/old_standard_tt_bold"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tres_cifroes"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingBottom="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/bar_um"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beerwings"
+                        android:fontFamily="@font/old_standard_tt_bold"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tres_cifroes"/>
+                </LinearLayout>
+            </LinearLayout>
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:columnCount="2"
                 android:rowCount="1"
                 android:id="@+id/gl_estabelecimentos">
-
             </GridLayout>
         </LinearLayout>
     </LinearLayout>

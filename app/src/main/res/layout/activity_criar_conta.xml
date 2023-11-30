@@ -91,7 +91,7 @@
                 app:mask="##.###.###-A"
                 style="@style/input_formulario"
                 android:hint="@string/formulario_hint_rg"
-                android:background="@drawable/rounded_edit_text"/>
+                android:background="@drawable/rounded_edit_text" />
 
             <TextView
                 style="@style/titulo_input_formulario"
