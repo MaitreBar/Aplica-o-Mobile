@@ -16,7 +16,7 @@
             style="@style/button_superior_voltar"/>
 
         <TextView
-            style="@style/titulo_reservar"
+            style="@style/tw_title_medium"
             android:text="@string/reservar_txt_instrucao"/>
 
         <TextView

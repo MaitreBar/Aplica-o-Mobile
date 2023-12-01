@@ -10,5 +10,7 @@
     <color name="preto">#000000</color>
     <color name="branco">#FFFFFF</color>
     <color name="cinza">#BDBDBD</color>
+    <color name="cinzaClaro">#D8D7D7</color>
+    <color name="cinzaEscuro">#474747</color>
     <color name="transparente">#00000000</color>
 </resources>
