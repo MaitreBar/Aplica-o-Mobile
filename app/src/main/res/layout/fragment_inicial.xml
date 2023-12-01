@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +42,6 @@
                     android:backgroundTint="@color/transparente"/>
             </LinearLayout>
         </LinearLayout>
-
 <!--        Carrossel-->
         <RelativeLayout
             android:layout_width="match_parent"
@@ -79,7 +79,6 @@
                 android:backgroundTint="@color/verdeEscuro"
                 android:text="Avançar"/>
         </RelativeLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -170,19 +169,16 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
         <TextView
             android:text="@string/txt_estabelecimentos"
             style="@style/tw_title_medium"/>
-
 <!--        Container lista estabelecimentos-->
         <LinearLayout
             android:id="@+id/gl_estabelecimentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-<!--            Divisão para dois cards-->
-
+<!--            Divisão para cards-->
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
