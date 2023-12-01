@@ -6,28 +6,50 @@
     tools:context=".layout.CardEstabelecimentoFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginHorizontal="10dp"
-        android:paddingBottom="5dp"
-        android:elevation="5dp">
-        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@mipmap/bar_um"
-            android:scaleType="centerCrop"/>
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Beerwings"
-            android:fontFamily="@font/old_standard_tt_bold"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tres_cifroes"/>
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal|center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/bar_um"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_marginTop="-5dp"
+                        android:text="Beerwings"
+                        style="@style/nome_estabelecimento"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tres_cifroes"/>
+                    <Button
+                        android:id="@+id/btn_visao_estabelecimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mais"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 </FrameLayout>
