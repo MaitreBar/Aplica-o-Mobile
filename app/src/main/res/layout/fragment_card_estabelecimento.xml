@@ -20,11 +20,8 @@
             android:src="@mipmap/bar_um"
             android:scaleType="centerCrop"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Beerwings"
-            android:fontFamily="@font/old_standard_tt_bold"
-            android:textSize="18sp"/>
+            style="@style/nome_estabelecimento"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
