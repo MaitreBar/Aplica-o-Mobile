@@ -28,6 +28,9 @@ interface Endpoints {
     @GET("/reservas/busca-por-usuario/{id}")
     fun getReservas(@Path("id") id: String) : Call<List<Estabelecimento>>
 
+    @GET("/reservas/busca-por-estabelecimento/{id}")
+    fun getReservasEstabelecimentos(@Path("id") id: Int) : Call<List<Usuario>>
+
     @DELETE("/reservas/{id}")
     fun deleteReserva(@Path("id") id: String) : Call<Reserva>
 }

@@ -3,7 +3,7 @@ package maitre.app.data
 import java.io.Serializable
 
 data class Estabelecimento(
-    val idEstabelecimento: Integer,
+    val idEstabelecimento: Int,
     val nome: String,
     val senha: String,
     val logradouro: String,

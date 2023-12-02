@@ -106,6 +106,7 @@
             </LinearLayout>
             <Button
                 style="@style/button_formulario"
+                android:id="@+id/btn_visao_reservar"
                 android:text="Reservar"
                 android:backgroundTint="@color/verdeEscuro">
             </Button>
@@ -128,7 +129,7 @@
                 android:text="@string/tres_cifroes"/>
             <TextView
                 style="@style/tw_title_medium"
-                android:text="Tag's"/>
+                android:text="Tags"/>
             <TextView
                 android:id="@+id/tv_visao_tag"
                 android:layout_width="wrap_content"
