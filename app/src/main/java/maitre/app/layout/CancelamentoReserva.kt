@@ -29,8 +29,7 @@ class CancelamentoReserva : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<Button>(R.id.cancelar_reserva_cancelar).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_reserva_cancelar).setOnClickListener {
             NetworkUtils.getRetrofitInstance(Sessao.urlApi)
                 .deleteReserva(arguments?.getString("id")!!)
                 .enqueue(object : Callback<Reserva> {
@@ -49,7 +48,7 @@ class CancelamentoReserva : Fragment() {
                 )
         }
 
-        view.findViewById<Button>(R.id.cancelar_reserva_feedback).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_reserva_feedback).setOnClickListener {
 
         }
     }

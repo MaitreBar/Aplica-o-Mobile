@@ -41,6 +41,7 @@ class VisaoEstabelecimento : Fragment() {
             (activity as MainActivity).replaceFragment(Inicial())
         }
 
+        binding.glComentario.removeAllViews()
         NetworkUtils.getRetrofitInstance(urlApi)
             .getReservasEstabelecimentos(e.idEstabelecimento).enqueue(object : Callback<List<Usuario>> {
             override fun onResponse(call: Call<List<Usuario>>, response: Response<List<Usuario>>) {
