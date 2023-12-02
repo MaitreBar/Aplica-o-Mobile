@@ -143,26 +143,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="155dp">
                 <LinearLayout
+                    android:id="@+id/gl_comentario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        android:layout_marginBottom="10dp"
-                        style="@style/visao_bg_coments">
-                        <TextView
-                            android:id="@+id/visao_nome_comentario"
-                            style="@style/visao_user_comment"
-                            android:text="Nome usuário"/>
-                        <TextView
-                            android:id="@+id/visao_comentario"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Comentário"/>
-                    </LinearLayout>
 <!--                    É possível adicionar mais comentários-->
                 </LinearLayout>
             </androidx.core.widget.NestedScrollView>
