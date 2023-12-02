@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.Reserva">
+    tools:context=".layout.Reserva"
+    android:id="@+id/layout_reserva">
 
     <!--        Card verde escuro -->
     <LinearLayout

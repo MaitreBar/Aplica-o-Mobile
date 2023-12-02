@@ -1,9 +1,11 @@
 package maitre.app.utils
 
 import maitre.app.data.Estabelecimento
+import maitre.app.data.Reserva
 import maitre.app.data.Usuario
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.PUT
@@ -25,4 +27,7 @@ interface Endpoints {
 
     @GET("/reservas/busca-por-usuario/{id}")
     fun getReservas(@Path("id") id: String) : Call<List<Estabelecimento>>
+
+    @DELETE("/reservas/{id}")
+    fun deleteReserva(@Path("id") id: String) : Call<Reserva>
 }

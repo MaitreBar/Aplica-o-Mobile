@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".layout.VisaoEstabelecimento">
+    tools:context=".layout.VisaoEstabelecimento"
+    android:id="@+id/layout_visao_estabelecimento">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,6 +24,7 @@
                 />
 
             <ImageButton
+                android:id="@+id/btn_visao_voltar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -42,6 +44,7 @@
                 android:orientation="vertical"
                 android:layout_margin="20dp">
                 <TextView
+                    android:id="@+id/tv_visao_nome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txt_nome_estabelecimento"
@@ -122,6 +125,7 @@
                 style="@style/tw_title_medium"
                 android:text="Descrição"/>
             <TextView
+                android:id="@+id/tv_visao_descricao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -130,6 +134,7 @@
                 style="@style/tw_title_medium"
                 android:text="Faixa de preço:"/>
             <TextView
+                android:id="@+id/tv_visao_faixa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tres_cifroes"/>
@@ -137,6 +142,7 @@
                 style="@style/tw_title_medium"
                 android:text="Tag's"/>
             <TextView
+                android:id="@+id/tv_visao_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Drinks"/>

@@ -69,6 +69,7 @@ class Reserva : Fragment() {
                                         args.putString("assento", assentus)
                                         args.putString("nome_usuario", usuario!!.nome)
                                         args.putString("nome_estabelecimento", estabelecimento.nome)
+                                        args.putString("id", reserva2.id)
 
                                         fragmentTransaction.add(
                                             R.id.scroll_reservas,
