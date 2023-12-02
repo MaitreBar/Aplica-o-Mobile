@@ -65,12 +65,14 @@
         <item name="android:textSize">18sp</item>
         <item name="android:layout_marginVertical">5dp</item>
         <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
     </style>
     <style name="input_formulario">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:textColor">@color/preto</item>
+        <item name="android:textColorHint">@color/cinza</item>
         <item name="android:layout_marginVertical">2dp</item>
         <item name="android:layout_gravity">right|center</item>
         <item name="android:singleLine">true</item>
@@ -220,6 +222,9 @@
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:clickable">true</item>
+        <item name="android:textColorHint">@color/preto</item>
+        <item name="android:strokeColor">@color/cinza</item>
+        <item name="android:strokeWidth">1</item>
     </style>
 =======
     <style name="reserva_button" parent="Widget.Material3.Button.OutlinedButton">
@@ -233,6 +238,7 @@
         <item name="android:paddingLeft">180dp</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
+        <item name="android:strokeColor">@color/transparente</item>
     </style>
 
 >>>>>>> eb8110293cfa4f59a6e9b1998d4b50b89f395e98
@@ -244,5 +250,24 @@
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/quicksand_bold</item>
         <item name="android:gravity">center</item>
+    </style>
+
+<!--    Visão estabelecimento-->
+
+    <style name="visao_buttom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@color/transparente</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
+    </style>
+    <style name="visao_bg_coments">
+        <item name="android:background">@color/cinzaClaro</item>
+    </style>
+    <style name="visao_user_comment">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
     </style>
 </resources>
