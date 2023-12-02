@@ -44,4 +44,23 @@
         <item name="android:singleLine">true</item>
         <item name="android:backgroundTint">@color/cinzaEscuro</item>
     </style>
+    <style name="button_formulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/cinzaClaro</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:layout_marginVertical">20dp</item>
+    </style>
+    <style name="visao_bg_coments">
+        <item name="android:background">@color/cinzaEscuro</item>
+    </style>
+    <style name="visao_user_comment">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textColor">@color/verdeAgua</item>
+    </style>
 </resources>

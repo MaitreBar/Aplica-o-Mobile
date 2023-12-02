@@ -75,42 +75,30 @@
                 android:layout_marginHorizontal="10dp">
                 <Button
                     android:id="@+id/btn_telefone_visao_estabelecimento"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/transparente"
                     android:text="Ligar"
-                    android:textColor="@color/verdeEscuro"
                     app:icon="@drawable/ic_phone_darkgreen"
                     app:iconGravity="textTop"
                     app:iconSize="30dp"
-                    app:iconTint="@color/verdeEscuro">
+                    app:iconTint="@color/verdeEscuro"
+                    style="@style/visao_buttom">
                 </Button>
                 <Button
                     android:id="@+id/btn_endereco_visao_estabelecimento"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/transparente"
                     android:text="Endereço"
-                    android:textColor="@color/verdeEscuro"
                     app:icon="@drawable/ic_location_darkgreen"
                     app:iconGravity="textTop"
                     app:iconSize="30dp"
-                    app:iconTint="@color/verdeEscuro">
+                    app:iconTint="@color/verdeEscuro"
+                    style="@style/visao_buttom">
                 </Button>
                 <Button
                     android:id="@+id/btn_entrar_fila_visao_estabelecimento"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/transparente"
                     android:text="Entrar na fila"
-                    android:textColor="@color/verdeEscuro"
                     app:icon="@drawable/ic_arrow_up"
                     app:iconGravity="textTop"
                     app:iconSize="30dp"
-                    app:iconTint="@color/verdeEscuro">
+                    app:iconTint="@color/verdeEscuro"
+                    style="@style/visao_buttom">
                 </Button>
             </LinearLayout>
             <Button
@@ -153,7 +141,7 @@
 
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="165dp">
+                android:layout_height="155dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -161,17 +149,16 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#EAEAEA"
                         android:orientation="vertical"
                         android:padding="10dp"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        style="@style/visao_bg_coments">
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nome usuário"
-                            android:fontFamily="@font/old_standard_tt_bold"
-                            android:textColor="@color/verdeEscuro"/>
+                            android:id="@+id/visao_nome_comentario"
+                            style="@style/visao_user_comment"
+                            android:text="Nome usuário"/>
                         <TextView
+                            android:id="@+id/visao_comentario"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Comentário"/>
