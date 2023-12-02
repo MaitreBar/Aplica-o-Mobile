@@ -41,25 +41,47 @@
                 android:text="@string/txt_lgpd3"
                 android:padding="20dp"
                 android:fontFamily="@font/quicksand_regular"
-                android:textColor="@color/verdeEscuro"/>
+                android:textColor="@color/verdeEscuro"
+                android:textAlignment="center"/>
         </ScrollView>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginBottom="20dp"
-            android:layout_gravity="bottom">
-
-            <Button
-                style="@style/bttLgpdNao"
-                android:text="@string/btt_nao"/>
-
-            <Button
-                style="@style/bttLgpdSim"
-                android:text="@string/btt_sim" />
-
+            style="@style/card_escolha"
+            android:background="@drawable/bottom_navigation_stroke"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/old_standard_tt_regular"
+                android:text="@string/txt_lgpd1"
+                android:textSize="20sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:padding="10dp"
+                android:text="@string/txt_lgpd2"
+                android:textAlignment="center"
+                android:textColor="@color/neutralTertiary"
+                android:textSize="12sp"
+                tools:ignore="TextContrastCheck"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/lgpd_recusa"
+                    style="@style/bttLgpdNao"
+                    android:text="@string/btt_nao"/>
+                <Button
+                    android:id="@+id/lgpd_aceite"
+                    style="@style/bttLgpdSim"
+                    android:text="@string/btt_sim"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>

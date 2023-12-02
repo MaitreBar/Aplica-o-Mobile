@@ -13,6 +13,6 @@
 
         <stroke
             android:width="0.8dp"
-            android:color="@color/cinza"
+            android:color="@color/neutralTertiary"
             />
 </shape>

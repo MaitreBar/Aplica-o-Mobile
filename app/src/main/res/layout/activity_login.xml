@@ -40,7 +40,7 @@
                     android:layout_marginLeft="30dp"/>
 
                 <TextView
-                    android:id="@+id/tv_ir_cadastro"
+                    android:id="@+id/tv_ir_lgpd"
                     style="@style/subtitulo_cabecalho"
                     android:clickable="true"
                     android:text="@string/login_txt_cadastro"

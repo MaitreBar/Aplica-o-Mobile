@@ -3,12 +3,13 @@
     <style name="Base.Theme.Maitre" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/neutralDark</item>
     </style>
 
     <style name="tw_user_name">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/verdeAgua</item>
+        <item name="android:textColor">@color/begeClaro</item>
         <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:textSize">24sp</item>
     </style>
@@ -16,7 +17,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/verdeAgua</item>
+        <item name="android:textColor">@color/begeClaro</item>
         <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:textSize">20sp</item>
         <item name="android:layout_marginVertical">20sp</item>
@@ -31,18 +32,18 @@
         <item name="android:hint">@string/reservar_estabelecimento</item>
         <item name="android:textSize">24sp</item>
         <item name="android:fontFamily">@font/old_standard_tt_bold</item>
-        <item name="android:textColorHint">@color/verdeAgua</item>
+        <item name="android:textColorHint">@color/begeClaro</item>
     </style>
     <style name="input_formulario">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:paddingLeft">10dp</item>
-        <item name="android:textColor">@color/cinzaClaro</item>
-        <item name="android:textColorHint">#686868</item>
+        <item name="android:textColor">@color/neutralTertiaryAlt</item>
+        <item name="android:textColorHint">@color/neutralSecondary</item>
         <item name="android:layout_marginVertical">2dp</item>
         <item name="android:layout_gravity">right|center</item>
         <item name="android:singleLine">true</item>
-        <item name="android:backgroundTint">@color/cinzaEscuro</item>
+        <item name="android:backgroundTint">@color/neutralPrimary</item>
     </style>
     <style name="button_formulario">
         <item name="android:layout_width">match_parent</item>
@@ -50,12 +51,12 @@
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/cinzaClaro</item>
+        <item name="android:textColor">@color/branco</item>
         <item name="android:fontFamily">@font/quicksand_semibold</item>
         <item name="android:layout_marginVertical">20dp</item>
     </style>
     <style name="visao_bg_coments">
-        <item name="android:background">@color/cinzaEscuro</item>
+        <item name="android:background">@color/neutralPrimary</item>
     </style>
     <style name="visao_user_comment">
         <item name="android:layout_width">wrap_content</item>
@@ -73,5 +74,46 @@
         <item name="android:layout_marginVertical">10dp</item>
         <item name="android:drawableRight">@drawable/ic_arrow_right</item>
         <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+    <style name="bttLgpdSim" parent="ThemeOverlay.Material3.Button">
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="backgroundTint">@color/begeClaro</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+
+    <style name="bttLgpdNao" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
+        <item name="backgroundTint">@color/transparente</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="strokeColor">@color/verdeEscuro</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+    <style name="card_escolha">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/neutralPrimary</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="card_estabelecimento">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/neutralPrimary</item>
+    </style>
+    <style name="hint_size" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">14sp</item>
     </style>
 </resources>
