@@ -47,7 +47,7 @@ class CardReservaFragment : Fragment() {
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 true
             )
-            popupView.findViewById<ImageButton>(R.id.cancelar_reserva_fechar).setOnClickListener {
+            popupView.findViewById<ImageButton>(R.id.btn_reserva_fechar).setOnClickListener {
             popup.dismiss()
             }
 
