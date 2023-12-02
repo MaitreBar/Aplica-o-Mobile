@@ -3,7 +3,7 @@ package maitre.app.data
 import maitre.app.layout.Reserva
 
 data class Reserva(
-    val idReserva: String,
+    val id: String,
     val dtReserva: String,
     val horaReserva: String,
     val checkin: Boolean,

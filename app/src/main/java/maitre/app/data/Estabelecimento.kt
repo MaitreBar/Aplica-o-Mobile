@@ -1,7 +1,9 @@
 package maitre.app.data
 
+import java.io.Serializable
+
 data class Estabelecimento(
-    val idEstabelecimento: Integer,
+    val idEstabelecimento: Int,
     val nome: String,
     val senha: String,
     val logradouro: String,
@@ -19,4 +21,4 @@ data class Estabelecimento(
     val assentos: List<Assento>,
     val tags: String,
     val reservas: List<Reserva>
-)
+) : Serializable

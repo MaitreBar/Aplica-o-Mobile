@@ -106,14 +106,14 @@
 
 <!--        ?. LGPD-->
     <style name="bttLgpdSim" parent="Widget.Material3.Button.OutlinedButton">
-    <item name="cornerRadius">5dp</item>
-    <item name="cornerSize">1dp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/branco</item>
         <item name="backgroundTint">@color/begeClaro</item>
-        <item name="android:layout_marginLeft">20dp</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
         <item name="android:padding">15dp</item>
@@ -126,11 +126,11 @@
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/verdeEscuro</item>
         <item name="backgroundTint">@color/branco</item>
-        <item name="android:layout_marginLeft">20dp</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
         <item name="android:padding">15dp</item>

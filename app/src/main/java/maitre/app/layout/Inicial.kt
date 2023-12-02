@@ -11,6 +11,7 @@ import maitre.app.data.Estabelecimento
 import maitre.app.databinding.FragmentInicialBinding
 import maitre.app.utils.NetworkUtils
 import maitre.app.utils.Sessao
+import maitre.app.utils.Sessao.usuario
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,6 +33,7 @@ class Inicial : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.perfilUserName.text = usuario!!.nome
         NetworkUtils.getRetrofitInstance(Sessao.urlApi)
             .getEstabelecimentos().enqueue(object : Callback<List<Estabelecimento>> {
             override fun onResponse(
@@ -48,10 +50,10 @@ class Inicial : Fragment() {
                 binding.glEstabelecimentos.removeAllViews()
 
                 if (response.body() != null) {
-                    response.body()!!.forEach {
+                    response.body()!!.forEach { estabelecimento : Estabelecimento ->
                         val args = Bundle()
-                        args.putString("nome", it.nome)
-                        args.putString("descricao", it.descricao)
+
+                        args.putSerializable("estabelecimento", estabelecimento)
 
                         fragmentTransaction.add(
                             R.id.gl_estabelecimentos,

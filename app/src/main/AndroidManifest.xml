@@ -41,9 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".layout.CriarConta"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".layout.Login"
-            android:exported="false"></activity>
+            android:exported="false"/>
     </application>
 </manifest>
