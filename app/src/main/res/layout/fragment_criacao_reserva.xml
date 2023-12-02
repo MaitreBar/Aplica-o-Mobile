@@ -99,31 +99,17 @@
             style="@style/txt_reservar"
             android:text="@string/reservar_txt_horario"/>
 
-            <androidx.core.widget.NestedScrollView
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/gl_horario_reserva"
                 android:layout_width="match_parent"
-                android:layout_height="130dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center">
-                        <Button
-                            style="@style/button_layout_horario_reserva"
-                            android:hint="@string/reservar_horario"/>
-                        <Button
-                            style="@style/button_layout_horario_reserva"
-                            android:hint="@string/reservar_horario"/>
-                        <Button
-                            style="@style/button_layout_horario_reserva"
-                            android:hint="@string/reservar_horario"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.core.widget.NestedScrollView>
+                android:layout_height="wrap_content">
+<!--                Botoes horário reserva-->
 
-
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <TextView
             style="@style/txt_reservar"
@@ -143,7 +129,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@mipmap/restaurante_top_down_foreground"/>
+            android:src="@mipmap/restaurante_top_down_foreground"
+            android:scaleType="fitXY"/>
 
         <LinearLayout
             android:layout_width="match_parent"
