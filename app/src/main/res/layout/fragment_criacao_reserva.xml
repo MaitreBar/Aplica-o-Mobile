@@ -107,7 +107,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 <!--                Botoes horário reserva-->
-
+                <Button
+                    android:id="@+id/reserva_hora"
+                    style="@style/button_layout_horario_reserva"
+                    android:hint="@string/reservar_horario"/>
             </LinearLayout>
         </HorizontalScrollView>
 

@@ -122,8 +122,9 @@
 
     <!--    ?. Confirmação Reserva-->
     <string name="txt_confirmacao1">Deseja confirmar? </string>
-    <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba "Reserva"</string>
+    <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba “Reservas”</string>
     <string name="btt_cancelar">Cancelar</string>
+    <string name="btt_cancelar_reserva">Cancelar reserva</string>
 
     <!--    ?. Perfil-->
     <string name="perfil_user_name">Liz Smith</string>

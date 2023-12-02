@@ -25,9 +25,9 @@ class Login : AppCompatActivity() {
             logar()
         }
 
-        binding.tvIrCadastro.setOnClickListener {
-            val intent = Intent(this, CriarConta::class.java)
-            Toast.makeText(baseContext, "Redirecionando para tela de cadastro", Toast.LENGTH_SHORT).show()
+        binding.tvIrLgpd.setOnClickListener {
+            val intent = Intent(this, AceiteLgpd::class.java)
+            Toast.makeText(baseContext, "Redirecionando para termo LGPD", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 

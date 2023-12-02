@@ -11,59 +11,45 @@
         android:gravity="bottom">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/branco">
+            style="@style/card_escolha"
+            android:background="@drawable/bottom_navigation_stroke"
+            android:gravity="bottom"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                tools:ignore="TextSizeCheck"
+                android:gravity="center_vertical|center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:fontFamily="@font/old_standard_tt_bold"
                     android:text="@string/telefone"
-                    android:layout_marginStart="20dp"
-
                     android:textSize="20sp"/>
 
-                <!--            Seta: voltar -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <ImageButton
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="right">
-
-                    <ImageButton
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:background="@mipmap/btt_x"
-                        android:layout_gravity="right"
-                        tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-            </LinearLayout>
-
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/baseline_close_24"
+                    android:backgroundTint="@color/transparente"
+                    tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:text="@string/nrm_telefone"
-                android:textColor="#8F90A6"
+                android:textColor="@color/neutralTertiary"
                 android:textSize="13sp"
                 android:id="@+id/estabelecimento"/>
-
         </LinearLayout>
     </RelativeLayout>
 </FrameLayout>
