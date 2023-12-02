@@ -47,33 +47,37 @@ class Reserva : Fragment() {
                     val fragmentManager = activity?.supportFragmentManager!!
                     val fragmentTransaction = fragmentManager.beginTransaction()
 
-                    binding.scrollReservas.removeAllViews()
                     if (response.body() != null){
                         var i = 0
+                        binding.scrollReservas.removeAllViews()
                         response.body()!!.forEach { estabelecimento ->
-
                             estabelecimento.reservas.forEach{ reserva ->
-                                val args = Bundle()
-                                var a = 0
-                                var assentus = ""
-                                reserva.assentos.forEach{ assento ->
-                                    assentus += when {
-                                        a == 0 -> assento.id
-                                        else -> ", ${assento.id}"
-                                    }
-                                    a++
-                                }
-                                args.putString("data", LocalDate.parse(reserva.dtReserva).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
-                                args.putString("hora", reserva.horaReserva)
-                                args.putString("assento", assentus)
-                                args.putString("nome_usuario", usuario!!.nome)
-                                args.putString("nome_estabelecimento", estabelecimento.nome)
+                                    usuario!!.reservas!!.forEach { reserva2 ->
+                                    if(!reserva.checkout && reserva2.id == reserva.id){
+                                        val args = Bundle()
+                                        var a = 0
+                                        var assentus = ""
+                                        reserva2.assentos.forEach{ assento ->
+                                            assentus += when {
+                                                a == 0 -> assento.id
+                                                else -> ", ${assento.id}"
+                                            }
+                                            a++
+                                        }
+                                        args.putString("data", LocalDate.parse(reserva2.dtReserva).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
+                                        args.putString("hora", reserva2.horaReserva)
+                                        args.putString("assento", assentus)
+                                        args.putString("nome_usuario", usuario!!.nome)
+                                        args.putString("nome_estabelecimento", estabelecimento.nome)
+                                        args.putString("id", reserva2.id)
 
-                                fragmentTransaction.add(
-                                    R.id.scroll_reservas,
-                                    CardReservaFragment::class.java,
-                                    args
-                                )
+                                        fragmentTransaction.add(
+                                            R.id.scroll_reservas,
+                                            CardReservaFragment::class.java,
+                                            args
+                                        )
+                                    }
+                                }
                             }
                             i++
                         }

@@ -39,8 +39,7 @@ class Login : AppCompatActivity() {
 
     private fun logar() {
         NetworkUtils.getRetrofitInstance(Sessao.urlApi)
-            .getLogin(binding.etEmail.text.toString(), binding.etSenha.text.toString()).enqueue(object :
-            Callback<Usuario> {
+            .getLogin(binding.etEmail.text.toString(), binding.etSenha.text.toString()).enqueue(object : Callback<Usuario> {
             override fun onResponse(
                 call: Call<Usuario>,
                 response: Response<Usuario>

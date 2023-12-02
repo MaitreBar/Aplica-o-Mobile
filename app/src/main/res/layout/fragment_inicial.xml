@@ -21,6 +21,7 @@
                 android:text="@string/txt_bem_vindo"/>
             <TextView
                 style="@style/tw_user_name"
+                android:id="@+id/perfil_user_name"
                 android:text="@string/perfil_user_name"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                     android:backgroundTint="@color/transparente"/>
             </LinearLayout>
         </LinearLayout>
-<!--        Carrossel-->
+        <!--        Carrossel-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -86,11 +87,11 @@
             <TextView
                 android:text="Categorias"
                 style="@style/tw_title_medium"/>
-<!--            Grupo de botões tipo de comida-->
+            <!--            Grupo de botões tipo de comida-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-<!--                Botões tipo de comida-->
+                <!--                Botões tipo de comida-->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -172,13 +173,13 @@
         <TextView
             android:text="@string/txt_estabelecimentos"
             style="@style/tw_title_medium"/>
-<!--        Container lista estabelecimentos-->
+        <!--        Container lista estabelecimentos-->
         <LinearLayout
             android:id="@+id/gl_estabelecimentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-<!--            Divisão para cards-->
+            <!--            Divisão para cards-->
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
