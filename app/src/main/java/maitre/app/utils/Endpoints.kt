@@ -1,5 +1,6 @@
 package maitre.app.utils
 
+import maitre.app.data.Assento
 import maitre.app.data.Estabelecimento
 import maitre.app.data.Reserva
 import maitre.app.data.Usuario
@@ -31,6 +32,12 @@ interface Endpoints {
     @GET("/reservas/busca-por-estabelecimento/{id}")
     fun getReservasEstabelecimentos(@Path("id") id: Int) : Call<List<Usuario>>
 
+    @POST("/reservas")
+    fun criarReserva(@Body reserva: Reserva) : Call<Reserva>
+
     @DELETE("/reservas/{id}")
     fun deleteReserva(@Path("id") id: String) : Call<Reserva>
+
+    @GET("/assentos/{id}")
+    fun getAssentoById(@Path("id") id : Int) : Call<Assento>
 }

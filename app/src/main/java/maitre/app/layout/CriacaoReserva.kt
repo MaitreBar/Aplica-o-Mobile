@@ -5,56 +5,136 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import maitre.app.R
+import maitre.app.data.Assento
+import maitre.app.data.Estabelecimento
+import maitre.app.data.Reserva
+import maitre.app.databinding.FragmentCriacaoReservaBinding
+import maitre.app.utils.NetworkUtils
+import maitre.app.utils.Sessao
+import maitre.app.utils.Sessao.urlApi
+import maitre.app.utils.Sessao.usuario
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import java.time.LocalDate
+import java.time.LocalTime
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [CriacaoReserva.newInstance] factory method to
- * create an instance of this fragment.
- */
 class CriacaoReserva : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    lateinit var binding: FragmentCriacaoReservaBinding
+    private lateinit var e : Estabelecimento
+    private lateinit var horario : String
+    private lateinit var dia : String
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_criacao_reserva, container, false)
+        binding = FragmentCriacaoReservaBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment CriacaoReserva.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CriacaoReserva().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        e = Sessao.estabelecimento!!
+
+        val fragmentManager = activity?.supportFragmentManager!!
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        binding.btnReservaNome.hint = e.nome
+
+        binding.btnReservaNome.setOnClickListener {
+            Sessao.estabelecimento = e
+            (activity as MainActivity).replaceFragment(VisaoEstabelecimento())
+        }
+
+        fun timeToMinutes(time: String): Int {
+            // Split the time string into components (hours, minutes, seconds.milliseconds)
+            val components = time.split(":").flatMap { it.split(".") }.map { it.toInt() }
+
+            // Extract hours, minutes, and seconds
+            val hours = components[0]
+            val minutes = if (components.size > 1) components[1] else 0
+            val seconds = if (components.size > 2) components[2] else 0
+
+            // Calculate total minutes
+            return hours * 60 + minutes + seconds / 60
+        }
+
+
+        val startMinutes = timeToMinutes(e.horarioAbertura)
+        val endMinutes = timeToMinutes(e.horarioFechamento)
+
+        val timeArray = mutableListOf<String>()
+
+        fun generateTimeArray() {
+            val newArray = mutableListOf<String>()
+            for (minutes in startMinutes..endMinutes step 30) {
+                val hours = minutes / 60
+                val mins = minutes % 60
+                val time = "${String.format("%02d", hours)}:${String.format("%02d", mins)}"
+                newArray.add(time)
             }
+            timeArray.clear()
+            timeArray.addAll(newArray)
+        }
+
+        generateTimeArray()
+
+        timeArray.forEach {horario ->
+            val args = Bundle()
+            args.putString("hora", horario)
+
+            fragmentTransaction.add(
+                R.id.gl_horario_reserva,
+                CardHorario::class.java,
+                args
+            )
+
+        }
+
+        binding.btConfirmarReserva.setOnClickListener {
+            val assentos : MutableList<Assento> = mutableListOf()
+
+            NetworkUtils.getRetrofitInstance(urlApi)
+                .getAssentoById(R.id.numero_assento).enqueue(object : Callback<Assento>{
+                    override fun onResponse(call: Call<Assento>, response: Response<Assento>) {
+                        if(response.isSuccessful) {
+                            assentos.add(response.body()!!)
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Assento>, t: Throwable) {
+                        Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
+                    }
+                })
+
+            val novaReserva = Reserva(
+                null,
+                LocalDate.now().toString(),
+                horario,
+                false,
+                null,
+                false,
+                null,
+                null,
+                e,
+                usuario!!,
+                assentos
+                )
+
+
+        }
+
+        fragmentTransaction.commit()
+    }
+
+    fun setHorario(h: String) {
+        this.horario = h
+    }
+    fun setDia (d: String) {
+        this.dia = d
     }
 }

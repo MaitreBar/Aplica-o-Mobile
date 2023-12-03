@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import maitre.app.R
 import maitre.app.data.Usuario
 import maitre.app.databinding.ActivityLoginBinding
 import maitre.app.utils.NetworkUtils
@@ -20,6 +21,7 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        Sessao.urlApi = getString(R.string.url_api)
 
         binding.btLogar.setOnClickListener {
             logar()

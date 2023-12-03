@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.CardDiaReservaFragment">
+    <LinearLayout
+        style="@style/button_layout_dia_reserva">
+        <TextView
+            android:id="@+id/reserva_dia_semana"
+            style="@style/layout_txt_semana"
+            android:text="@string/reservar_dia_seg"/>
+        <TextView
+            android:id="@+id/reserva_dia_numero"
+            style="@style/layout_dia_semana"
+            android:text="@string/reservar_dia"/>
+    </LinearLayout>
+</FrameLayout>
