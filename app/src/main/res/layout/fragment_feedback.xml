@@ -184,7 +184,7 @@
                 android:textColor="@color/branco"
                 android:layout_gravity="center"
                 android:fontFamily="@font/quicksand_semibold"
-                android:text="Enviar comentário"
+                android:text="@string/bbt_enviar"
                 android:gravity="right"
                 android:backgroundTint="@color/verdeEscuro"
                 style="@style/reserva_button"
