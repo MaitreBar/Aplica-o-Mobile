@@ -63,7 +63,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="#66000000"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Confira os lugares mais visitados"
+                android:text="@string/txt_inicio1"
                 android:textColor="@color/branco"
                 android:textSize="18sp" />
 
@@ -78,14 +78,14 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/verdeEscuro"
-                android:text="Avançar"/>
+                android:text="@string/veja_mais"/>
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:text="Categorias"
+                android:text="@string/categoria"
                 style="@style/tw_title_medium"/>
             <!--            Grupo de botões tipo de comida-->
             <LinearLayout
@@ -107,7 +107,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Drinks"
+                        android:text="@string/drinks"
                         android:gravity="center"
                         />
                 </LinearLayout>
@@ -126,7 +126,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Snack"
+                        android:text="@string/petiscos"
                         android:gravity="center"
                         />
                 </LinearLayout>
@@ -145,7 +145,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Petisco"
+                        android:text="@string/porcoes"
                         android:gravity="center"
                         />
                 </LinearLayout>
@@ -164,7 +164,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sobremesa"
+                        android:text="@string/sobremesa"
                         android:gravity="center"
                         />
                 </LinearLayout>

@@ -15,12 +15,13 @@
         <TextView
             android:id="@+id/visao_nome_comentario"
             style="@style/visao_user_comment"
-            android:text="Nome usuário"/>
+            android:text="@string/nome_usuario"
+            android:textSize="17sp"/>
         <TextView
             android:id="@+id/visao_comentario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comentário"/>
+            android:text="@string/comentario"/>
     </LinearLayout>
 
 </FrameLayout>

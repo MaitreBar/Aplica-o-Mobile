@@ -50,22 +50,22 @@
             style="@style/perfil_button"/>
         <Button
             android:id="@+id/btn_perfil_reservar"
-            android:text="Reserve agora"
+            android:text="@string/perfil_reservar"
             android:drawableLeft="@drawable/ic_calendar_check"
             style="@style/perfil_button"/>
         <Button
             android:id="@+id/btn_perfil_alterar"
-            android:text="Alterar perfil"
+            android:text="@string/perfil_alterar"
             android:drawableLeft="@drawable/ic_pencil_edit"
             style="@style/perfil_button"/>
         <Button
             android:id="@+id/btn_perfil_chat"
-            android:text="Chat"
+            android:text="@string/perfil_chat"
             android:drawableLeft="@drawable/ic_info"
             style="@style/perfil_button"/>
         <Button
             android:id="@+id/btn_perfil_logout"
-            android:text="Logout"
+            android:text="@string/perfil_logout"
             android:drawableLeft="@drawable/ic_logout"
             android:textColor="@color/begeEscuro"
             style="@style/perfil_button"/>

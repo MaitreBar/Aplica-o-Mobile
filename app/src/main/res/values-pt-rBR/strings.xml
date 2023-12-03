@@ -1,4 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Maitre</string>
+
+    <string name="app_name">Maître</string>
+    <string name="txt_reservas">Reservas</string>
+    <string name="menu_reservas">Reservas</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="txt_home">Reserve a sua experiência</string>
+    <string name="formulario_txt_entrar">Entrar</string>
+    <string name="formulario_nome">Nome completo</string>
+    <string name="formulario_nascimento">Data de nascimento</string>
+    <string name="formulario_hint_nascimento">DD/MM/AAAA</string>
+    <string name="formulario_celular">Telefone</string>
+    <string name="formulario_senha">Senha</string>
+    <string name="formulario_confirmar_senha">Confirmar senha</string>
+    <string name="login_txt_entrar">Não possui conta?</string>
+    <string name="login_txt_cadastro">Cadastre-se</string>
+    <string name="cadastro_criar">Criar conta</string>
+    <string name="cadastro_txt_login">Já tem uma conta?</string>
+    <string name="cadastro_btn_criar">Criar</string>
+    <string name="txt_lgpd1">Política de privacidade</string>
+    <string name="txt_lgpd2">O aceite dessa política segue as normas da lei LGPD, e permite que consiga navegar na plataforma. Saiba mais clicando aqui</string>
+    <string name="btt_sim">Sim</string>
+    <string name="btt_nao">Não</string>
+    <string name="aceite_lgpd">Política de privacidade</string>
+    <string name="txt_lgpd3">
+        Ao utilizar este aplicativo, você concorda com os termos e condições descritos abaixo, referentes à coleta, uso e compartilhamento de seus dados pessoais, conforme estabelecido pela Lei Geral de Proteção de Dados (LGPD).
+
+        1. Dados Coletados:
+        O aplicativo coletará as seguintes informações pessoais: CPF, nome completo, data de nascimento, RG, número de celular e endereço de e-mail.
+
+        2. Finalidade da Coleta:
+        Esses dados serão utilizados exclusivamente para a realização de reservas em estabelecimentos parceiros. O aplicativo se compromete a não utilizar essas informações para qualquer outra finalidade que não esteja explicitamente descrita neste documento.
+
+        3. Armazenamento de Dados:
+        As informações coletadas serão armazenadas de forma segura em nossos servidores pelo período de 1 (um) ano. Após esse período, os dados serão automaticamente excluídos.
+
+        4. Compartilhamento de Dados:
+        O aplicativo compartilhará seu nome completo, data de nascimento e CPF com os estabelecimentos nos quais você realizar reservas. Esse compartilhamento é necessário para garantir a efetivação da reserva em seu nome.
+
+        5. Segurança dos Dados:
+        Comprometemo-nos a adotar as medidas necessárias para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição não autorizada.
+
+        6. Consentimento:
+        Ao clicar em "SIM" , você está dando seu consentimento para a coleta, uso e compartilhamento de suas informações conforme descrito nesta política.
+
+        7. Recusa ao Consentimento:
+        Caso você não aceite os termos desta política, não será possível prosseguir com a navegação e utilização do aplicativo.
+
+        8. Direitos do Titular:
+        Você tem o direito de acessar, corrigir, excluir ou portar seus dados. Caso deseje exercer esses direitos ou tenha alguma dúvida sobre o tratamento de seus dados, entre em contato conosco através dos canais disponibilizados no aplicativo.
+
+        9. Alterações na Política:
+        Reservamo-nos o direito de fazer alterações nesta política. Caso ocorram mudanças significativas, notificaremos os usuários por meio do aplicativo ou por outros meios apropriados.
+
+        Ao clicar em "Sim" , você concorda expressamente com os termos desta Política LGPD.
+    </string>
+    <string name="alterar_antiga_senha">Senha antiga</string>
+    <string name="alterar_nova_senha">Nova senha</string>
+    <string name="alterar_txt_alterar">Alterar perfil</string>
+    <string name="alterar_btn_atualizar">Atualizar</string>
+    <string name="assentos">Assento (s) :</string>
+    <string name="nomes">Nome (s) :</string>
+    <string name="nome_reserva">Liz e Anna</string>
+    <string name="dia">Dia :</string>
+    <string name="horario">Horário :</string>
+    <string name="telefone">"Telefone "</string>
+    <string name="fila">Fila</string>
+    <string name="txt_fila">Você está na posição </string>
+    <string name="txt_fila2">.  Aguarde.</string>
+    <string name="txt_confirmacao1">Deseja confirmar? </string>
+    <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba “Reservas”</string>
+    <string name="btt_cancelar">Cancelar</string>
+    <string name="perfil_txt_reserva">Verifique suas próximas reservas aqui</string>
+    <string name="perfil_reservar">Reserve agora</string>
+    <string name="perfil_alterar">Alterar perfil</string>
+    <string name="perfil_txt_chat">Chat, clear your doubts.</string>
+    <string name="reservar_txt_instrucao">Escolha as opções para sua reserva</string>
+    <string name="reservar_txt_dia">Dia:</string>
+    <string name="reservar_dia_seg">Seg</string>
+    <string name="reservar_dia_ter">Ter</string>
+    <string name="reservar_dia_qua">Qua</string>
+    <string name="reservar_dia_qui">Qui</string>
+    <string name="reservar_dia_sex">Sex</string>
+    <string name="reservar_dia_sab">Sáb</string>
+    <string name="reservar_dia_dom">Dom</string>
+    <string name="reservar_txt_horario">Horário:</string>
+    <string name="reservar_txt_qtd">Quantidade de reservas:</string>
+    <string name="reservar_hint_qtd_reserva">Ex.: 2</string>
+    <string name="reservar_txt_selecionar">Selecione os lugares:</string>
+    <string name="reservar_txt_num_assento">Digite o número dos assentos:</string>
+    <string name="reservar_hint_qtd_assentos">Ex.: 12, 13</string>
+    <string name="reservar_txt_pessoas">Cadastro de pessoas:</string>
+    <string name="reservar_hint_qtd_pessoas">Ex.: Ana, Paulo</string>
+    <string name="reservar_btn_confirmar">Confirmar reserva</string>
+    <string name="reservar_estabelecimento">Nome estabelecimento</string>
+    <string name="txt_cancelamento">Selecione a opção desejada</string>
+    <string name="txt_feedback">Nos conte a sua experiência sobre a sua reserva: </string>
+    <string name="txt_feedback2">" Escreva aqui sua experiência ...."</string>
+    <string name="btt_reserva">Confirmar reserva</string>
+    <string name="txt_bem_vindo">Bem vindo (a)</string>
+    <string name="txt_pesquisar">Pesquisar</string>
+    <string name="txt_estabelecimentos">Estabelecimentos</string>
+    <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
+    <string name="btt_cancelar_reserva">Cancelar reserva</string>
+    <string name="bbt_enviar">Enviar comentário</string>
+    <string name="nome_usuario">"Nome do usuário: "</string>
+    <string name="comentario">Comentário</string>
+    <string name="veja_mais">Veja mais</string>
+    <string name="txt_inicio1">Confira os lugares mais visitados</string>
+    <string name="categoria">Categorias</string>
+    <string name="petiscos">Pesticos</string>
+    <string name="porcoes">Porções</string>
+    <string name="sobremesa">Sobremesa</string>
+    <string name="ligar">Ligar</string>
+    <string name="endereco">Endereço</string>
+    <string name="entrar_fila">Entrar na fila</string>
+    <string name="reservar">Reservar</string>
+    <string name="descricao_estabelecimento">Descrição</string>
+    <string name="faixa_preco">Faixa de preço</string>
+    <string name="mapa">Mapa</string>
 </resources>

@@ -40,7 +40,8 @@
                 android:textAlignment="center"
                 android:textColor="#8F90A6"
                 android:textSize="13sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck"
+            />
 
 
             <LinearLayout
