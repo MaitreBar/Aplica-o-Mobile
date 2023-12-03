@@ -3,177 +3,205 @@
     <string name="url_api" translatable="false">http://44.213.7.88:8080/</string>
 
     <!--    Random -->
-    <string name="txt_reservas">Reservas</string>
-    <string name="txt_cifroes">$$$</string>
-    <string name="txt_nota_estabelecimento">5.0</string>
-    <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
-    <string name="txt_bem_vindo">Bem vindo (a)</string>
-    <string name="txt_pesquisar">Pesquisar</string>
-    <string name="txt_estabelecimentos">Estabelecimentos</string>
+    <string name="txt_reservas">Reservation</string>
+    <string name="txt_cifroes" translatable="false">$$$</string>
+    <string name="txt_nota_estabelecimento" translatable="false">5.0</string>
+    <string name="txt_nome_estabelecimento">Name of establishment</string>
+    <string name="txt_bem_vindo">Welcome</string>
+    <string name="txt_pesquisar">Research</string>
+    <string name="txt_estabelecimentos">Establishments</string>
 
     <!--    Menu footer-->
-    <string name="menu_home">Home</string>
-    <string name="menu_reservas">Reservas</string>
-    <string name="menu_perfil">Perfil</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_reservas">Reservations</string>
+    <string name="menu_perfil">Profile</string>
 
     <!--    1. SplashScreen -->
-    <string name="maitre">MAÎTRE</string>
+    <string name="maitre" translatable="false">MAÎTRE</string>
 
     <!--    2. Home -->
-    <string name="txt_home">Reserve a sua experiência</string>
+    <string name="txt_home">Book your experience</string>
 
     <!--    Formulários-->
-    <string name="formulario_txt_entrar">Entrar</string>
-    <string name="formulario_nome">Nome completo</string>
-    <string name="formulario_hint_nome">Liz Smith</string>
-    <string name="formulario_nascimento">Data de nascimento</string>
-    <string name="formulario_hint_nascimento">DD/MM/AAAA</string>
-    <string name="formulario_rg">RG</string>
-    <string name="formulario_hint_rg">XX.XXX.XXX-X</string>
-    <string name="formulario_cpf">CPF</string>
-    <string name="formulario_hint_cpf">XXX.XXX.XXX-XX</string>
-    <string name="formulario_celular">Celular</string>
-    <string name="formulario_hint_celular">(XX) 9XXXX-XXXX</string>
-    <string name="formulario_email">E-mail</string>
-    <string name="formulario_hint_email">liz@gmail.com</string>
-    <string name="formulario_senha">Senha</string>
-    <string name="formulario_hint_senha">*******</string>
-    <string name="formulario_confirmar_senha">Confirmar senha</string>
+    <string name="formulario_txt_entrar">Login</string>
+    <string name="formulario_nome">Full name</string>
+    <string name="formulario_hint_nome" translatable="false">Liz Smith</string>
+    <string name="formulario_nascimento">Date of birth</string>
+    <string name="formulario_hint_nascimento">DD/MM/YYYY</string>
+    <string name="formulario_rg" translatable="false">RG</string>
+    <string name="formulario_hint_rg" translatable="false">XX.XXX.XXX-X</string>
+    <string name="formulario_cpf" translatable="false">CPF</string>
+    <string name="formulario_hint_cpf" translatable="false">XXX.XXX.XXX-XX</string>
+    <string name="formulario_celular">Phone number</string>
+    <string name="formulario_hint_celular" translatable="false">(XX) 9XXXX-XXXX</string>
+    <string name="formulario_email" translatable="false">E-mail</string>
+    <string name="formulario_hint_email" translatable="false">liz@gmail.com</string>
+    <string name="formulario_senha">Password</string>
+    <string name="formulario_hint_senha" translatable="false">*******</string>
+    <string name="formulario_confirmar_senha">Confirm Password</string>
 
     <!--    3. Login-->
-    <string name="login_txt_entrar">Não possui conta?</string>
-    <string name="login_txt_cadastro">Cadastre-se</string>
+    <string name="login_txt_entrar">Don\'t have an account?</string>
+    <string name="login_txt_cadastro">Sign Up</string>
 
     <!--    4. Criar conta-->
-    <string name="cadastro_criar">Criar conta</string>
-    <string name="cadastro_txt_login">Já tem uma conta?</string>
-    <string name="cadastro_btn_criar">Criar</string>
+    <string name="cadastro_criar">Register</string>
+    <string name="cadastro_txt_login">Already have an account?</string>
+    <string name="cadastro_btn_criar">Create</string>
 
     <!--        5. LGPD-->
-    <string name="txt_lgpd1">Permissão de uso de dados</string>
-    <string name="txt_lgpd2">Confirma saber que nosso sistema está de acordo com a lei LGPD   nº 13.853, de 2019</string>
-    <string name="btt_sim">Sim</string>
-    <string name="btt_nao">Não</string>
-    <string name="aceite_lgpd">Política de privacidade</string>
+    <string name="txt_lgpd1">Privacy Policy</string>
+    <string name="txt_lgpd2">Acceptance of this policy follows the rules of the LGPD law, and allows you to browse the platform. Learn more by clicking here</string>
+    <string name="btt_sim">Yes</string>
+    <string name="btt_nao">No</string>
+    <string name="aceite_lgpd">Privacy Policy</string>
     <string name="txt_lgpd3">
-        Ao utilizar este aplicativo, você concorda com os termos e condições descritos abaixo, referentes à coleta, uso e compartilhamento de seus dados pessoais, conforme estabelecido pela Lei Geral de Proteção de Dados (LGPD).
+    By using this application, you agree to the terms and conditions described below, regarding the collection, use and sharing of your personal data, as established by the General Data Protection Law (LGPD).
 
-                1. Dados Coletados:
-        O aplicativo coletará as seguintes informações pessoais: CPF, nome completo, data de nascimento, RG, número de celular e endereço de e-mail.
+         1. Data Collected:
+         The application will collect the following personal information: CPF, full name, date of birth, ID, cell phone number and email address.
 
-                2. Finalidade da Coleta:
-        Esses dados serão utilizados exclusivamente para a realização de reservas em estabelecimentos parceiros. O aplicativo se compromete a não utilizar essas informações para qualquer outra finalidade que não esteja explicitamente descrita neste documento.
+         2. Purpose of Collection:
+         This data will be used exclusively to make reservations at partner establishments. The application undertakes not to use this information for any other purpose that is not explicitly described in this document.
 
-                3. Armazenamento de Dados:
-        As informações coletadas serão armazenadas de forma segura em nossos servidores pelo período de 1 (um) ano. Após esse período, os dados serão automaticamente excluídos.
+         3. Data Storage:
+         The information collected will be stored securely on our servers for a period of 1 (one) year. After this period, the data will be automatically deleted.
 
-                4. Compartilhamento de Dados:
-        O aplicativo compartilhará seu nome completo, data de nascimento e CPF com os estabelecimentos nos quais você realizar reservas. Esse compartilhamento é necessário para garantir a efetivação da reserva em seu nome.
+         4. Data Sharing:
+         The application will share your full name, date of birth and CPF with the establishments where you make reservations. This sharing is necessary to guarantee that the reservation will be made in your name.
 
-                5. Segurança dos Dados:
-        Comprometemo-nos a adotar as medidas necessárias para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição não autorizada.
+         5. Data Security:
+         We commit to taking the necessary measures to protect your data against unauthorized access, alteration, unauthorized disclosure or destruction.
 
-                6. Consentimento:
-        Ao clicar em "Aceitar" ou utilizar este aplicativo, você está dando seu consentimento para a coleta, uso e compartilhamento de suas informações conforme descrito nesta política.
+         6. Consent:
+         By clicking "YES", you are giving your consent to the collection, use and sharing of your information as described in this policy.
 
-                7. Recusa ao Consentimento:
-        Caso você não aceite os termos desta política, lamentamos informar que não será possível prosseguir com a navegação e utilização do aplicativo.
+         7. Refusal of Consent:
+         If you do not accept the terms of this policy, you will not be able to continue browsing and using the application.
 
-                8. Direitos do Titular:
-        Você tem o direito de acessar, corrigir, excluir ou portar seus dados. Caso deseje exercer esses direitos ou tenha alguma dúvida sobre o tratamento de seus dados, entre em contato conosco através dos canais disponibilizados no aplicativo.
+         8. Rights of the Holder:
+         You have the right to access, correct, delete or port your data. If you wish to exercise these rights or have any questions about the processing of your data, please contact us through the channels available in the application.
 
-                9. Alterações na Política:
-        Reservamo-nos o direito de fazer alterações nesta política. Caso ocorram mudanças significativas, notificaremos os usuários por meio do aplicativo ou por outros meios apropriados.
+         9. Policy Changes:
+         We reserve the right to make changes to this policy. If significant changes occur, we will notify users through the application or other appropriate means.
 
-        Ao clicar em "Aceitar" ou utilizar este aplicativo, você concorda expressamente com os termos desta Política LGPD. Caso não concorde, lamentamos, mas não será possível utilizar o aplicativo.
+         By clicking "Yes", you expressly agree to the terms of this LGPD Policy.
     </string>
 
+<!--    ?.  Inicio-->
+    <string name="txt_inicio1">Check out the most visited places</string>
+    <string name="categoria">Categories</string>
+    <string name="drinks" translatable="false">Drinks</string>
+    <string name="petiscos">Snack</string>
+    <string name="porcoes">Portions</string>
+    <string name="sobremesa">Dessert</string>
+
+
     <!--    ?. Alterar Perfil-->
-    <string name="alterar_antiga_senha">Senha antiga</string>
-    <string name="alterar_nova_senha">Nova senha</string>
-    <string name="alterar_txt_alterar">Alterar perfil</string>
-    <string name="alterar_btn_atualizar">Atualizar</string>
+    <string name="alterar_antiga_senha">Old password</string>
+    <string name="alterar_nova_senha">New password</string>
+    <string name="alterar_txt_alterar">Change Profile</string>
+    <string name="alterar_btn_atualizar">Update</string>
+
+<!--    ?. Visão estabelecimento-->
+    <string name="ligar">Call</string>
+    <string name="endereco">Address</string>
+    <string name="entrar_fila">Get in line</string>
+    <string name="reservar">Book</string>
+    <string name="descricao_estabelecimento">Description</string>
+    <string name="txt__estabelecimento" translatable="false">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</string>
+    <string name="faixa_preco">Price range</string>
+    <string name="tags" translatable="false">Tags</string>
+    <string name="mapa">Map</string>
+
 
     <!--    ?. Reserva-->
-    <string name="nome_bar1">Beerwings</string>
-    <string name="nome_bar2">Madureira</string>
-    <string name="dois_cifroes">$$</string>
-    <string name="tres_cifroes">$$$</string>
-    <string name="nota_bar1">4.8</string>
-    <string name="nota_bar2">3.7</string>
-    <string name="assentos">Assento (s) :</string>
-    <string name="nrm_assento">1 &amp; 2 </string>
-    <string name="nomes">Nome (s) :</string>
-    <string name="nome_reserva">Liz e Anna</string>
-    <string name="dia">Dia :</string>
-    <string name="dia_reserva">23/11/2023</string>
-    <string name="horario">Horário :</string>
-    <string name="horario_reserva1">11AM</string>
-    <string name="horario_reserva2">22pm</string>
+    <string name="nome_bar1" translatable="false">Beerwings</string>
+    <string name="nome_bar2" translatable="false">Madureira</string>
+    <string name="dois_cifroes" translatable="false">$$</string>
+    <string name="tres_cifroes" translatable="false">$$$</string>
+    <string name="nota_bar1" translatable="false">4.8</string>
+    <string name="nota_bar2" translatable="false">3.7</string>
+    <string name="assentos">Seat(s) :</string>
+    <string name="nrm_assento" translatable="false">1 &amp; 2 </string>
+    <string name="nomes">Name (s) :</string>
+    <string name="nome_reserva">Liz and Anna</string>
+    <string name="dia">Day :</string>
+    <string name="dia_reserva" translatable="false">23/11/2023</string>
+    <string name="horario">Timetable :</string>
+    <string name="horario_reserva1" translatable="false">11AM</string>
+    <string name="horario_reserva2" translatable="false">22pm</string>
 
     <!--    ?. Telefone Estabelecimento-->
-    <string name="telefone">Telefone </string>
-    <string name="nrm_telefone">(11) 98765-4321</string>
+    <string name="telefone">Phone number</string>
+    <string name="nrm_telefone" translatable="false">(11) 98765-4321</string>
 
     <!--    ?. Fila-->
-    <string name="fila">Fila</string>
-    <string name="txt_fila">Você está na posição </string>
-    <string name="txt_fila2">.  Aguarde.</string>
+    <string name="fila">Row</string>
+    <string name="txt_fila">You are in the position  </string>
+    <string name="txt_fila2">. Hold on.</string>
 
     <!--    ?. Confirmação Reserva-->
-    <string name="txt_confirmacao1">Deseja confirmar? </string>
-    <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba “Reservas”</string>
-    <string name="btt_cancelar">Cancelar</string>
-    <string name="btt_cancelar_reserva">Cancelar reserva</string>
+    <string name="txt_confirmacao1">Do you want to confirm?</string>
+    <string name="txt_confirmacao2">After confirming the reservation, it will appear in the “Reservations” tab</string>
+    <string name="btt_cancelar">Cancel</string>
+    <string name="btt_cancelar_reserva">Cancel reservation</string>
 
     <!--    ?. Perfil-->
-    <string name="perfil_user_name">Liz Smith</string>
-    <string name="perfil_telefone">+1 – 4842989351</string>
-    <string name="perfil_email">liz@gmail.com</string>
-    <string name="perfil_txt_reserva">Verifique suas próximas reservas aqui</string>
-    <string name="perfil_reservar">Reservar agora</string>
-    <string name="perfil_alterar">Alterar perfil</string>
-    <string name="perfil_chat">Chat</string>
+    <string name="perfil_user_name" translatable="false">Liz Smith</string>
+    <string name="perfil_telefone" translatable="false">+1 – 4842989351</string>
+    <string name="perfil_email" translatable="false">liz@gmail.com</string>
+    <string name="perfil_txt_reserva">Check your upcoming bookings here</string>
+    <string name="perfil_reservar">Book now</string>
+    <string name="perfil_alterar">Change profile</string>
+    <string name="perfil_chat" translatable="false">Chat</string>
     <string name="perfil_txt_chat">Chat, retire suas dúvidas.</string>
-    <string name="perfil_logout">Logout</string>
+    <string name="perfil_logout" translatable="false">Logout</string>
 
     <!--    ?. Criação reserva-->
-    <string name="reservar_txt_instrucao">Escolha as opções para sua reserva</string>
-    <string name="reservar_txt_dia">Dia:</string>
-    <string name="reservar_dia_seg">Seg</string>
-    <string name="reservar_dia_ter">Ter</string>
-    <string name="reservar_dia_qua">Qua</string>
-    <string name="reservar_dia_qui">Qui</string>
-    <string name="reservar_dia_sex">Sex</string>
-    <string name="reservar_dia_sab">Sab</string>
-    <string name="reservar_dia_dom">Dom</string>
-    <string name="reservar_dia">10</string>
-    <string name="reservar_txt_horario">Horário:</string>
-    <string name="reservar_horario">09:00 AM</string>
-    <string name="reservar_txt_qtd">Quantidade de reservas:</string>
-    <string name="reservar_hint_qtd_reserva">Ex:. 2</string>
-    <string name="reservar_txt_selecionar">Selecione os lugares:</string>
-    <string name="reservar_txt_num_assento">Digite o número dos
-        assentos:</string>
-    <string name="reservar_hint_qtd_assentos">Ex:. 12, 13</string>
-    <string name="reservar_txt_pessoas">Cadastro de pessoas:</string>
-    <string name="reservar_hint_qtd_pessoas">Ex:. Ana, Paulo</string>
-    <string name="reservar_btn_confirmar">Confirmar reserva</string>
-    <string name="reservar_estabelecimento">Nome estabelecimento</string>
+    <string name="reservar_txt_instrucao">Choose options for your reservation</string>
+    <string name="reservar_txt_dia">Day:</string>
+    <string name="reservar_dia_seg">Mon</string>
+    <string name="reservar_dia_ter">Tue</string>
+    <string name="reservar_dia_qua">Wed</string>
+    <string name="reservar_dia_qui">Thu</string>
+    <string name="reservar_dia_sex">Fri</string>
+    <string name="reservar_dia_sab">Sat</string>
+    <string name="reservar_dia_dom">Sun</string>
+    <string name="reservar_dia" translatable="false">10</string>
+    <string name="reservar_txt_horario">Timetable:</string>
+    <string name="reservar_horario" translatable="false">09:00 AM</string>
+    <string name="reservar_txt_qtd">Number of reservations:</string>
+    <string name="reservar_hint_qtd_reserva">E.G.: 2</string>
+    <string name="reservar_txt_selecionar">Select places:</string>
+    <string name="reservar_txt_num_assento">Enter seat numbers:</string>
+    <string name="reservar_hint_qtd_assentos">E.G. : 12, 13</string>
+    <string name="reservar_txt_pessoas">Registration of people:</string>
+    <string name="reservar_hint_qtd_pessoas">E.G. : Ana, Paulo</string>
+    <string name="reservar_btn_confirmar">Confirm reservation</string>
+    <string name="reservar_estabelecimento">Name of establishment</string>
     =======
     <!--    ?. Cancelamento reserva-->
-    <string name="txt_cancelamento">Selecione a opção desejada</string>
-    <string name="btt_feedback">Feedback</string>
+    <string name="txt_cancelamento">Select the desired option</string>
+    <string name="btt_feedback" translatable="false">Feedback</string>
 
     <!--    ?.  Feedback-->
 
-    <string name="txt_feedback">Nos conte a sua experiência sobre a sua reserva: </string>
-    <string name="txt_feedback2"> Escreva aqui sua experiência ....</string>
-    <string name="btt_reserva"> Confirmar reserva</string>
-    >>>>>>> eb8110293cfa4f59a6e9b1998d4b50b89f395e98
+    <string name="txt_feedback">Tell us your experience about your reservation:</string>
+    <string name="txt_feedback2">Write your experience here....</string>
+    <string name="btt_reserva">Confirm reservation</string>
+    <string name="bbt_enviar">Submit comment</string>
+
+<!--    ?. Card feedback-->
+
+    <string name="nome_usuario">Username</string>
+    <string name="comentario">Comment</string>
+
+<!--    ?. Card estabelecimento-->
+    <string name="veja_mais">See more</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
 
 </resources>

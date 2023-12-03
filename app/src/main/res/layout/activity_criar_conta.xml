@@ -56,99 +56,109 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
             android:orientation="vertical">
+
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_nome"/>
+                android:text="@string/formulario_nome" />
+
             <EditText
                 android:id="@+id/et_cadastro_nome"
-                android:inputType="textPersonName"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_nome"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="textPersonName" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_nascimento"/>
+                android:text="@string/formulario_nascimento" />
+
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_cadastro_dtNasc"
-                android:inputType="number"
-                app:mask="##/##/####"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_nascimento"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="number"
+                app:mask="##/##/####" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_rg"/>
+                android:text="@string/formulario_rg" />
+
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_cadastro_rg"
-                app:mask="##.###.###-A"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_rg"
-                android:background="@drawable/rounded_edit_text" />
+                app:mask="##.###.###-A" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_cpf"/>
+                android:text="@string/formulario_cpf" />
+
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_cadastro_cpf"
-                android:inputType="number"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_cpf"
-                app:mask="###.###.###-##"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="number"
+                app:mask="###.###.###-##" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_celular"/>
+                android:text="@string/formulario_celular" />
+
             <com.vicmikhailau.maskededittext.MaskedEditText
                 android:id="@+id/et_cadastro_celular"
-                android:inputType="number"
-                app:mask="(##) 9####-####"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_celular"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="number"
+                app:mask="(##) 9####-####" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_email"/>
+                android:text="@string/formulario_email" />
+
             <EditText
                 android:id="@+id/et_cadastro_email"
                 style="@style/input_formulario"
-                android:hint="@string/formulario_hint_email"
-                android:background="@drawable/rounded_edit_text"/>
+                android:background="@drawable/rounded_edit_text"
+                android:hint="@string/formulario_hint_email" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_senha"/>
+                android:text="@string/formulario_senha" />
+
             <EditText
                 android:id="@+id/et_cadastro_senha"
-                android:inputType="textPassword"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_senha"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="textPassword" />
 
             <TextView
                 style="@style/titulo_input_formulario"
-                android:text="@string/formulario_confirmar_senha"/>
+                android:text="@string/formulario_confirmar_senha" />
+
             <EditText
                 android:id="@+id/et_cadastro_confirmar_senha"
-                android:inputType="textPassword"
                 style="@style/input_formulario"
+                android:background="@drawable/rounded_edit_text"
                 android:hint="@string/formulario_hint_senha"
-                android:background="@drawable/rounded_edit_text"/>
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/bt_cadastrar"
                 style="@style/button_formulario"
-                android:text="@string/cadastro_btn_criar"
-                android:backgroundTint="@color/verdeEscuro"/>
+                android:backgroundTint="@color/verdeEscuro"
+                android:text="@string/cadastro_btn_criar" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
