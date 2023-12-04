@@ -14,26 +14,15 @@
 
         <!-- Card verde escuro -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:background="@color/verdeEscuro"
-            android:gravity="center">
-
+            style="@style/action_bar"
+            android:background="@color/verdeEscuro">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                style="@style/action_bar_div">
                 <TextView
-                    android:layout_width="300dp"
-                    style="@style/titulo_cabecalho"
+                    style="@style/action_bar_title"
                     android:text="@string/aceite_lgpd"/>
-
                 <ImageButton
-                    style="@style/button_titulo_cabecalho"
-                    android:layout_height="60dp"
-                    android:layout_gravity="end"
-                    />
-
+                    style="@style/action_bar_icon_arrow_left"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -97,6 +86,5 @@
                     tools:ignore="TextContrastCheck" />
             </LinearLayout>
         </LinearLayout>
-        </LinearLayout>
-
+    </LinearLayout>
 </FrameLayout>
