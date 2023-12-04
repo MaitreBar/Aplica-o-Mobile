@@ -40,6 +40,10 @@ class VisaoEstabelecimento : Fragment() {
             estabelecimento = null
             (activity as MainActivity).replaceFragment(Inicial())
         }
+        binding.btnVisaoReservar.setOnClickListener {
+            estabelecimento = e
+            (activity as MainActivity).replaceFragment(CriacaoReserva())
+        }
 
         binding.glComentario.removeAllViews()
         NetworkUtils.getRetrofitInstance(urlApi)

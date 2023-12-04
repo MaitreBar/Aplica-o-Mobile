@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CriacaoReserva">
+    tools:context=".layout.CriacaoReserva">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,6 +13,7 @@
         android:layout_marginHorizontal="20dp">
 
         <Button
+            android:id="@+id/btn_reserva_nome"
             style="@style/button_superior_voltar"/>
 
         <TextView
@@ -27,71 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
+                android:id="@+id/container_reserva_dias"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_seg"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_ter"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_qua"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_qui"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_sex"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                <TextView
-                    style="@style/layout_txt_semana"
-                    android:text="@string/reservar_dia_sab"/>
-                <TextView
-                    style="@style/layout_dia_semana"
-                    android:text="@string/reservar_dia"/>
-            </LinearLayout>
-                <LinearLayout
-                    style="@style/button_layout_dia_reserva">
-                    <TextView
-                        style="@style/layout_txt_semana"
-                        android:text="@string/reservar_dia_dom"/>
-                    <TextView
-                        style="@style/layout_dia_semana"
-                        android:text="@string/reservar_dia"/>
-                </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -107,10 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 <!--                Botoes horário reserva-->
-                <Button
-                    android:id="@+id/reserva_hora"
-                    style="@style/button_layout_horario_reserva"
-                    android:hint="@string/reservar_horario"/>
+
             </LinearLayout>
         </HorizontalScrollView>
 
