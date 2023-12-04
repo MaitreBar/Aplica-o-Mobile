@@ -20,6 +20,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.time.LocalDate
 import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 
 class CriacaoReserva : Fragment() {
 
@@ -27,6 +28,7 @@ class CriacaoReserva : Fragment() {
     private lateinit var e : Estabelecimento
     private lateinit var horario : String
     private lateinit var dia : String
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -63,11 +65,33 @@ class CriacaoReserva : Fragment() {
             return hours * 60 + minutes + seconds / 60
         }
 
+        fun generateDayButtons() {
+            val buttons = mutableListOf<String>()
+            val startDate = LocalDate.now()
+
+            for (i in 0 until 30) {
+                val args = Bundle()
+                val day = startDate.plusDays(i.toLong())
+                val diaSemana = day.format(DateTimeFormatter.ofPattern("E"))
+                val diaMes = day.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                args.putString("diaSemana", diaSemana)
+                args.putString("diaMes", diaMes)
+
+                fragmentTransaction.add(
+                    R.id.container_reserva_dias,
+                    CardDiaReservaFragment::class.java,
+                    args
+                )
+            }
+        }
+
+        generateDayButtons()
 
         val startMinutes = timeToMinutes(e.horarioAbertura)
         val endMinutes = timeToMinutes(e.horarioFechamento)
 
         val timeArray = mutableListOf<String>()
+
 
         fun generateTimeArray() {
             val newArray = mutableListOf<String>()

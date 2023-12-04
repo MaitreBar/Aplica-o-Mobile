@@ -40,4 +40,7 @@ interface Endpoints {
 
     @GET("/assentos/{id}")
     fun getAssentoById(@Path("id") id : Int) : Call<Assento>
+
+    @PUT("/reservas/{id}")
+    fun atualizarReserva(@Path("id") id : String, @Body r : Reserva) : Call<Reserva>
 }

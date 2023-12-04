@@ -51,6 +51,34 @@ class CardReservaFragment : Fragment() {
             popup.dismiss()
             }
 
+            popupView.findViewById<Button>(R.id.btn_reserva_cancelar).setOnClickListener {
+                NetworkUtils.getRetrofitInstance(Sessao.urlApi)
+                    .deleteReserva(arguments?.getString("id")!!)
+                    .enqueue(object : Callback<Reserva> {
+                        override fun onResponse(call: Call<Reserva>, response: Response<Reserva>) {
+                            if (!response.isSuccessful) {
+                                return
+                            }
+                            Toast.makeText(context, "Reserva excluída com sucesso", Toast.LENGTH_SHORT).show()
+                            popup.dismiss()
+                            (activity as MainActivity).replaceFragment(Reserva())
+                        }
+
+                        override fun onFailure(call: Call<Reserva>, t: Throwable) {
+                            Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
+                        }
+
+                    }
+                    )
+            }
+
+            popupView.findViewById<Button>(R.id.btn_reserva_feedback).setOnClickListener {
+                popup.dismiss()
+
+                Feedback().setReserva(arguments?.getSerializable("reserva") as Reserva)
+                (activity as MainActivity).replaceFragment(Feedback())
+            }
+
             popup.showAsDropDown(binding.reservaLayout)
         }
 

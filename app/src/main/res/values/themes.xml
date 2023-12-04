@@ -197,7 +197,7 @@
     <style name="button_layout_dia_reserva"> <!--    Botões de seleção para dia da reserva-->
         <item name="android:background">@drawable/border_linear_layout</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_width">80dp</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginHorizontal">5dp</item>
