@@ -62,7 +62,7 @@ class VisaoEstabelecimento : Fragment() {
                         usuario.reservas!!.forEach{ reserva ->
                             e.reservas.forEach { reserva2 ->
                                 if(reserva2.id == reserva.id){
-                                    if (reserva2.checkout && !reserva2.feedback.isNullOrBlank()){
+                                    if (reserva2.checkOut && !reserva2.feedback.isNullOrBlank()){
                                         val args = Bundle()
 
                                         args.putString("feedback", reserva2.feedback)

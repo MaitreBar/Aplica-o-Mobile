@@ -53,7 +53,7 @@ class Reserva : Fragment() {
                         response.body()!!.forEach { estabelecimento ->
                             estabelecimento.reservas.forEach{ reserva ->
                                     usuario!!.reservas!!.forEach { reserva2 ->
-                                    if(!reserva.checkout && reserva2.id == reserva.id){
+                                    if(!reserva.checkOut && reserva2.id == reserva.id){
                                         val args = Bundle()
                                         var a = 0
                                         var assentus = ""
