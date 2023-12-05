@@ -1,6 +1,7 @@
 package maitre.app.utils
 
 import maitre.app.data.Assento
+import maitre.app.data.AssentoReserva
 import maitre.app.data.Estabelecimento
 import maitre.app.data.Reserva
 import maitre.app.data.Usuario
@@ -38,9 +39,12 @@ interface Endpoints {
     @DELETE("/reservas/{id}")
     fun deleteReserva(@Path("id") id: String) : Call<Reserva>
 
+    @PUT("/reservas/{id}")
+    fun atualizarReserva(@Path("id") id : String, @Body r : Reserva) : Call<Reserva>
+
     @GET("/assentos/{id}")
     fun getAssentoById(@Path("id") id : Int) : Call<Assento>
 
-    @PUT("/reservas/{id}")
-    fun atualizarReserva(@Path("id") id : String, @Body r : Reserva) : Call<Reserva>
+    @PUT("/assentos/{id}")
+    fun atualizarAssento(@Path("id") id : String, @Body a : Assento): Call<Assento>
 }

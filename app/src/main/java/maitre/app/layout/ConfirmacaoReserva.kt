@@ -5,56 +5,74 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import maitre.app.R
+import maitre.app.data.Assento
+import maitre.app.data.AssentoReserva
+import maitre.app.data.Reserva
+import maitre.app.databinding.FragmentConfirmacaoReservaBinding
+import maitre.app.utils.NetworkUtils
+import maitre.app.utils.Sessao.estabelecimento
+import maitre.app.utils.Sessao.urlApi
+import maitre.app.utils.Sessao.usuario
+import maitre.app.utils.SharedViewModel
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ConfirmacaoReserva.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ConfirmacaoReserva : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    lateinit var binding : FragmentConfirmacaoReservaBinding
+    private lateinit var sharedViewModel: SharedViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+        sharedViewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_confirmacao_reserva, container, false)
+        binding =  FragmentConfirmacaoReservaBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ConfirmacaoReserva.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ConfirmacaoReserva().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val novaReserva = sharedViewModel.novaReserva
+
+        binding.btnReservaConfirmar.setOnClickListener {
+            NetworkUtils.getRetrofitInstance(urlApi)
+                .criarReserva(novaReserva).enqueue(object : Callback<Reserva> {
+                    override fun onResponse(call: Call<Reserva>, response: Response<Reserva>) {
+                        novaReserva.assentos.forEach { assento ->
+                            NetworkUtils.getRetrofitInstance(urlApi)
+                                .atualizarAssento(assento.id, Assento(assento.id, assento.disponivel, novaReserva , estabelecimento!! )).enqueue(object : Callback<Assento> {
+                                    override fun onResponse(
+                                        call: Call<Assento>,
+                                        response: Response<Assento>
+                                    ) {
+                                        Toast.makeText(context, "Reserva criada com sucesso", Toast.LENGTH_SHORT).show()
+
+                                        (activity as MainActivity).replaceFragment(Reserva())
+                                    }
+
+                                    override fun onFailure(call: Call<Assento>, t: Throwable) {
+                                        Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
+                                    }
+
+                                })
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Reserva>, t: Throwable) {
+                        Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
+                    }
+
+                })
+        }
     }
 }

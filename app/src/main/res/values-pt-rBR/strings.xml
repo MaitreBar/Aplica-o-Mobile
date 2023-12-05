@@ -120,4 +120,8 @@
     <string name="faixa_preco">Faixa de preço</string>
     <string name="mapa">Mapa</string>
     <string name="menu_reservas_concluidas">Reservas concluídas</string>
+    <string name="chat"> Maytê bot </string>
+    <string name="online"> Online </string>
+    <string name="digite">Escreva a sua mensagem</string>
+    <string name="selecione_assento">Selecione um assento</string>
 </resources>

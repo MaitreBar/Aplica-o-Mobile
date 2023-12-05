@@ -1,5 +1,6 @@
 package maitre.app.layout
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -55,11 +56,19 @@ class Perfil : Fragment() {
         }
 
         view.findViewById<Button>(R.id.btn_perfil_logout).setOnClickListener {
-
-            usuario = null
-            val intent = Intent(context, Login::class.java)
-
-            startActivity(intent)
+            logout()
         }
+    }
+
+    private fun logout() {
+        // Clear login data on logout
+        val sharedPreferences = requireContext().getSharedPreferences("login_data", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.clear()
+        editor.apply()
+
+        usuario = null
+        val intent = Intent(context, Login::class.java)
+        startActivity(intent)
     }
 }
