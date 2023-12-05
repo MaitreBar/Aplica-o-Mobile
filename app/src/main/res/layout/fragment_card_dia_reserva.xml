@@ -6,7 +6,8 @@
     tools:context=".layout.CardDiaReservaFragment">
     <LinearLayout
         android:id="@+id/button_dia_reserva"
-        style="@style/button_layout_dia_reserva">
+        style="@style/button_layout_dia_reserva"
+        android:background="@drawable/border_linear_layout">
         <TextView
             android:id="@+id/reserva_dia_semana"
             style="@style/layout_txt_semana"
