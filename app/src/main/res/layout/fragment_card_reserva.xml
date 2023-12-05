@@ -4,144 +4,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".layout.CardReservaFragment">
-    <androidx.cardview.widget.CardView
-        android:layout_width="390dp"
-        android:layout_height="210dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="10dp">
-
-        <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="210dp"
-            android:orientation="vertical"
-            android:padding="5dp"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="10dp"
-                android:clickable="true"
-                android:contentDescription="Foto do bar"
-                android:focusable="true"
-                android:src="@mipmap/bar_um"
-                tools:ignore="HardcodedText" />
 
 
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/quicksand_light"
-                android:text="@string/nome_bar1"
-                android:textStyle="bold"
-                android:gravity="center"
-                tools:ignore="RtlHardcoded"
-                android:id="@+id/reserva_nome_estabelecimento"/>
-
+        <androidx.cardview.widget.CardView
+            style="@style/card_estabelecimento">
             <LinearLayout
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                tools:ignore="RtlHardcoded">
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal|center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@mipmap/bar_um"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:text="@string/nome_bar1"
+                        tools:ignore="RtlHardcoded"
+                        android:id="@+id/reserva_nome_estabelecimento"
+                        style="@style/nome_estabelecimento"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/reserva_layout">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="@string/assentos"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="13dp"
-                    android:fontFamily="@font/quicksand_light"
-                    android:text="@string/dois_cifroes"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/quicksand_light"
+                        android:text="@string/nrm_assento"
+                        android:textSize="15sp"
+                        android:id="@+id/assento_reserva" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_star"
-                    android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="@string/nomes"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/quicksand_light"
-                    android:gravity="center_vertical"
-                    android:text="@string/nota_bar1"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/quicksand_light"
+                        android:text="@string/nome_reserva"
+                        android:textSize="15sp"
+                        android:id="@+id/nome_reserva"/>
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="@string/dia"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/quicksand_light"
+                        android:text="@string/dia_reserva"
+                        android:textSize="15sp"
+                        android:id="@+id/dia_reserva"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="@string/horario"
+                        android:textSize="18sp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/quicksand_light"
+                        android:text="@string/horario_reserva1"
+                        android:textSize="15sp"
+                        android:id="@+id/horario_reserva"/>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="160dp"
-            android:layout_height="205dp"
-            android:layout_marginStart="200dp"
-            android:orientation="vertical"
-            android:id="@+id/reserva_layout">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="@string/assentos"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/quicksand_light"
-                android:text="@string/nrm_assento"
-                android:textSize="15sp"
-                android:id="@+id/assento_reserva" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="@string/nomes"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/quicksand_light"
-                android:text="@string/nome_reserva"
-                android:textSize="15sp"
-                android:id="@+id/nome_reserva"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="22dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="@string/dia"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/quicksand_light"
-                android:text="@string/dia_reserva"
-                android:textSize="15sp"
-                android:id="@+id/dia_reserva"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="@string/horario"
-                android:textSize="18sp"
-                tools:ignore="TextSizeCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/quicksand_light"
-                android:text="@string/horario_reserva1"
-                android:textSize="15sp"
-                android:id="@+id/horario_reserva"/>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
+        </androidx.cardview.widget.CardView>
 </FrameLayout>
