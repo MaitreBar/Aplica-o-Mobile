@@ -29,6 +29,7 @@
                 style="@style/action_bar_subtitle_1"
                 android:text="@string/cadastro_txt_login"/>
             <TextView
+                android:id="@+id/tv_ir_login"
                 style="@style/action_bar_subtitle_2"
                 android:text="@string/formulario_txt_entrar"
                 android:textColor="@color/verdeAgua"/>
