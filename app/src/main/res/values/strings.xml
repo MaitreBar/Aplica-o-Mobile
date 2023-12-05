@@ -169,7 +169,7 @@
     <string name="reservar_dia_sex">Fri</string>
     <string name="reservar_dia_sab">Sat</string>
     <string name="reservar_dia_dom">Sun</string>
-    <string name="reservar_dia" translatable="false">10</string>
+    <string name="reservar_dia" translatable="false">10/03/2024</string>
     <string name="reservar_txt_horario">Schedule:</string>
     <string name="reservar_horario" translatable="false">09:00 AM</string>
     <string name="reservar_txt_qtd">Number of reservations:</string>
@@ -204,5 +204,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
-
+    <string name="chat"> Maytê bot </string>
+    <string name="online"> Online </string>
+    <string name="digite">Escreva a sua mensgem</string>
 </resources>

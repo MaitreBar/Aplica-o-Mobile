@@ -33,7 +33,6 @@ class VisaoEstabelecimento : Fragment() {
         val e = estabelecimento!!
 
         binding.tvVisaoDescricao.text = e.descricao
-        binding.tvVisaoFaixa.text = e.faixaDePreco
         binding.tvVisaoNome.text = e.nome
         binding.tvVisaoTag.text = removeCharacters(e.tags, "[]\"")
         binding.btnVisaoVoltar.setOnClickListener {

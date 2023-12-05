@@ -12,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
@@ -27,14 +28,20 @@ class ChatbotFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         // Inflate the layout for this fragment
         binding = FragmentChatbotBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSend.setOnClickListener{
+
+
+
             var valorUsuario = binding.etInput.text.toString()
             val containerChat = binding.containerChat
 
@@ -99,6 +106,11 @@ class ChatbotFragment : Fragment() {
                 }
             }
 
+        }
+
+        view.findViewById<ImageButton>(R.id.btn_voltar_perfil).setOnClickListener {
+            (activity as MainActivity).replaceFragment(Perfil())
+            (activity as MainActivity).showBottomNavigationView()
         }
     }
 

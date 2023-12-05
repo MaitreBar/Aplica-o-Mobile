@@ -8,6 +8,5 @@
     <Button
         android:id="@+id/reserva_hora"
         style="@style/button_layout_horario_reserva"
-        android:hint="@string/reservar_horario"/>
-
+        android:text="@string/reservar_horario"/>
 </LinearLayout>
