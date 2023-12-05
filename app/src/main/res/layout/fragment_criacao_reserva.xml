@@ -69,7 +69,6 @@
                 style="@style/txt_reservar"
                 android:layout_width="200dp"
                 android:text="@string/reservar_txt_num_assento"/>
-
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

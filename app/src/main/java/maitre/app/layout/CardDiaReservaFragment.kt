@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import maitre.app.R
 import maitre.app.databinding.FragmentCardDiaReservaBinding
@@ -34,8 +35,16 @@ class CardDiaReservaFragment : Fragment() {
         binding.reservaDiaNumero.text = diaMes
         binding.reservaDiaSemana.text = diaSemana
 
+        var selected = false
         binding.buttonDiaReserva.setOnClickListener {
+            selected = !selected
+            if(selected){
+                binding.buttonDiaReserva.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.verdeEscuro))
+            } else {
+                binding.buttonDiaReserva.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.transparente))
+            }
             sharedViewModel.dia = diaMes
         }
     }
 }
+
