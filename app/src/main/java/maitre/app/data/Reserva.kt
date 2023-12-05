@@ -1,6 +1,6 @@
 package maitre.app.data
 
-import maitre.app.layout.Reserva
+import java.io.Serializable
 
 data class Reserva(
     val id: String?,
@@ -10,8 +10,8 @@ data class Reserva(
     val dtHoraCheckIn: String?,
     val checkout: Boolean,
     val dtHoraCheckOut: String?,
-    val feedback: String?,
+    var feedback: String?,
     val estabelecimento: Estabelecimento,
     val usuario: Usuario,
     val assentos: List<Assento>
-)
+) : Serializable

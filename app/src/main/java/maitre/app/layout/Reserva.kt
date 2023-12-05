@@ -71,6 +71,8 @@ class Reserva : Fragment() {
                                         args.putString("nome_estabelecimento", estabelecimento.nome)
                                         args.putString("id", reserva2.id)
 
+                                        args.putSerializable("reserva", reserva2)
+
                                         fragmentTransaction.add(
                                             R.id.scroll_reservas,
                                             CardReservaFragment::class.java,
