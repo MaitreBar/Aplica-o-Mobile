@@ -10,6 +10,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import maitre.app.R
+import maitre.app.utils.Sessao.estabelecimento
+import maitre.app.utils.Sessao.reserva
 import maitre.app.utils.Sessao.usuario
 
 class Perfil : Fragment() {
@@ -72,6 +74,8 @@ class Perfil : Fragment() {
         editor.clear()
         editor.apply()
 
+        reserva = null
+        estabelecimento = null
         usuario = null
         val intent = Intent(context, Login::class.java)
         startActivity(intent)

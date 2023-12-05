@@ -140,8 +140,8 @@
 
     <!--    ?. Fila-->
     <string name="fila">Row</string>
-    <string name="txt_fila">"You are at the position  "</string>
-    <string name="txt_fila2">. Hold on.</string>
+    <string name="txt_fila">"You are at :"</string>
+    <string name="txt_fila2"> position. Please wait.</string>
 
     <!--    ?. Confirmação Reserva-->
     <string name="txt_confirmacao1">Do you want to confirm?</string>
