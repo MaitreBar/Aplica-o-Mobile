@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.ReservasConcluidas">
+
+    <!--        Card verde escuro -->
+    <LinearLayout
+        style="@style/action_bar"
+        android:background="@color/verdeEscuro">
+        <LinearLayout
+            style="@style/action_bar_div">
+            <TextView
+                style="@style/action_bar_title"
+                android:text="@string/menu_reservas_concluidas"/>
+            <ImageButton
+                style="@style/action_bar_icon_arrow_left"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--        Card de reserva-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll_reservas"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
