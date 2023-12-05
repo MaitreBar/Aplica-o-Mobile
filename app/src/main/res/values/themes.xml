@@ -256,19 +256,22 @@
         <item name="android:fontFamily">@font/quicksand_regular</item>
         <item name="android:textSize">12sp</item>
     </style>
-    <style name="button_layout_horario_reserva" parent="ThemeOverlay.Material3.Button"> <!--    Botões de seleção para horário da reserva-->
-        <item name="android:background">@drawable/border_linear_layout</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">5dp</item>
-        <item name="android:clickable">true</item>
-        <item name="android:textColorHint">@color/preto</item>
-    </style>
-    <style name="reserva_button" parent="Widget.Material3.Button.OutlinedButton">
+    <style name="button_layout_horario_reserva">
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/transparente</item>
+        <item name="strokeColor">@color/neutralSecondary</item>
+        <item name="strokeWidth">0.5dp</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:textColor">@color/nautralPrimaryAlt</item>
+    </style>
+
+    <style name="reserva_button" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
         <item name="android:textColor">#fff</item>
@@ -302,6 +305,7 @@
         <item name="android:textColor">@color/verdeEscuro</item>
         <item name="background">@color/transparente</item>
         <item name="strokeColor">@color/verdeEscuro</item>
+        <item name="strokeWidth">0.5dp</item>
         <item name="android:layout_marginHorizontal">5dp</item>
         <item name="android:layout_marginVertical">10dp</item>
         <item name="android:fontFamily">@font/quicksand_semibold</item>
@@ -329,13 +333,12 @@
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:layout_width">90dp</item>
-        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/branco</item>
-        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:gravity">left</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
-        <item name="android:padding">15dp</item>
         <item name="android:fontFamily">@font/quicksand_semibold</item>
         <item name="android:src">@drawable/ic_arrow_back_black</item>
     </style>

@@ -23,7 +23,7 @@ class CardHorario : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.reservaHora.hint = arguments?.getString("hora")
+        binding.reservaHora.text = arguments?.getString("hora")
 
         binding.reservaHora.setOnClickListener {
             CriacaoReserva().setHorario(arguments?.getString("hora")!!)
