@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import maitre.app.R
 import maitre.app.data.Estabelecimento
 import maitre.app.databinding.FragmentCardEstabelecimentoBinding
 import maitre.app.utils.Sessao
@@ -33,5 +34,4 @@ class CardEstabelecimentoFragment : Fragment() {
             (activity as MainActivity).replaceFragment(VisaoEstabelecimento())
         }
     }
-
 }

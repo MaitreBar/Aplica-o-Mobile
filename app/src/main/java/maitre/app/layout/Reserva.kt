@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import maitre.app.R
@@ -34,6 +35,12 @@ class Reserva : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+        view.findViewById<ImageButton>(R.id.btn_voltar_inicial).setOnClickListener {
+            (activity as MainActivity).binding.bottomNavigationView.selectedItemId =
+                R.id.home_nav
+        }
 
         NetworkUtils.getRetrofitInstance(Sessao.urlApi)
             .getReservas(usuario!!.id).enqueue(object : Callback<List<Estabelecimento>> {
@@ -92,9 +99,7 @@ class Reserva : Fragment() {
 
             })
 
-        view.findViewById<ImageButton>(R.id.btn_voltar_inicial).setOnClickListener {
-            (activity as MainActivity).replaceFragment(Inicial())
-        }
+
     }
 
 
