@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.PopupWindow
+import android.widget.TextView
 import android.widget.Toast
 import maitre.app.R
 import maitre.app.data.Usuario
@@ -39,9 +42,41 @@ class VisaoEstabelecimento : Fragment() {
             estabelecimento = null
             (activity as MainActivity).replaceFragment(Inicial())
         }
+
         binding.btnVisaoReservar.setOnClickListener {
             estabelecimento = e
             (activity as MainActivity).replaceFragment(CriacaoReserva())
+        }
+
+        binding.btnEnderecoVisaoEstabelecimento.setOnClickListener {
+            val popupView = LayoutInflater.from(requireContext()).inflate(R.layout.fragment_endereco_estabelecimento, null)
+            val popup = PopupWindow(
+                popupView,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                true
+            )
+            popupView.findViewById<ImageButton>(R.id.btn_fechar_endereco).setOnClickListener {
+                popup.dismiss()
+            }
+            popupView.findViewById<TextView>(R.id.estabelecimento_endereco).text = "${estabelecimento?.logradouro.toString()}, ${estabelecimento?.numero}"
+            popup.showAsDropDown(binding.btnEnderecoVisaoEstabelecimento)
+        }
+
+        binding.btnTelefoneVisaoEstabelecimento.setOnClickListener {
+            val popupView = LayoutInflater.from(requireContext()).inflate(R.layout.fragment_telefone_estabelecimento, null)
+            val popup = PopupWindow(
+                popupView,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                true
+            )
+            popupView.findViewById<ImageButton>(R.id.btn_fechar_telefone).setOnClickListener {
+                popup.dismiss()
+            }
+
+            popupView.findViewById<TextView>(R.id.estabelecimento_telefone).text = estabelecimento?.telefoneContato
+            popup.showAsDropDown(binding.btnTelefoneVisaoEstabelecimento)
         }
 
         binding.glComentario.removeAllViews()

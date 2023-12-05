@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.TelefoneEstabelecimento">
+    tools:context=".layout.EnderecoEstabelecimentoFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,11 +29,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/old_standard_tt_bold"
-                    android:text="@string/telefone"
+                    android:text="@string/endereco"
                     android:textSize="20sp"/>
 
                 <ImageButton
-                    android:id="@+id/btn_fechar_telefone"
+                    android:id="@+id/btn_fechar_endereco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -48,10 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="@string/nrm_telefone"
+                android:text="Rua das Flores, 123 - São Paulo"
                 android:textColor="@color/neutralTertiary"
                 android:textSize="13sp"
-                android:id="@+id/estabelecimento_telefone"/>
+                android:id="@+id/estabelecimento_endereco"/>
         </LinearLayout>
     </RelativeLayout>
 </FrameLayout>
