@@ -3,17 +3,18 @@
     <string name="url_api" translatable="false">http://44.213.7.88:8080/</string>
 
     <!--    Random -->
-    <string name="txt_reservas">Reservation</string>
+    <string name="txt_reservas">Booking</string>
     <string name="txt_cifroes" translatable="false">$$$</string>
     <string name="txt_nota_estabelecimento" translatable="false">5.0</string>
-    <string name="txt_nome_estabelecimento">Name of establishment</string>
+    <string name="txt_nome_estabelecimento">Establishment's name</string>
     <string name="txt_bem_vindo">Welcome</string>
-    <string name="txt_pesquisar">Research</string>
+    <string name="txt_pesquisar">Search</string>
     <string name="txt_estabelecimentos">Establishments</string>
 
     <!--    Menu footer-->
     <string name="menu_home" translatable="false">Home</string>
-    <string name="menu_reservas">Reservations</string>
+    <string name="menu_reservas">Bookings</string>
+    <string name="menu_reservas_concluidas">Completed Bookings</string>
     <string name="menu_perfil">Profile</string>
 
     <!--    1. SplashScreen -->
@@ -26,7 +27,7 @@
     <string name="formulario_txt_entrar">Login</string>
     <string name="formulario_nome">Full name</string>
     <string name="formulario_hint_nome" translatable="false">Liz Smith</string>
-    <string name="formulario_nascimento">Date of birth</string>
+    <string name="formulario_nascimento">Birth date</string>
     <string name="formulario_hint_nascimento">DD/MM/YYYY</string>
     <string name="formulario_rg" translatable="false">RG</string>
     <string name="formulario_hint_rg" translatable="false">XX.XXX.XXX-X</string>
@@ -89,7 +90,7 @@
     </string>
 
     <!--    ?.  Inicio-->
-    <string name="txt_inicio1">Check out the most visited places</string>
+    <string name="txt_inicio1">Check out our most visited places</string>
     <string name="categoria">Categories</string>
     <string name="drinks" translatable="false">Drinks</string>
     <string name="petiscos">Snack</string>
@@ -138,14 +139,14 @@
 
     <!--    ?. Fila-->
     <string name="fila">Row</string>
-    <string name="txt_fila">You are in the position  </string>
+    <string name="txt_fila">"You are at the position  "</string>
     <string name="txt_fila2">. Hold on.</string>
 
     <!--    ?. Confirmação Reserva-->
     <string name="txt_confirmacao1">Do you want to confirm?</string>
-    <string name="txt_confirmacao2">After confirming the reservation, it will appear in the “Reservations” tab</string>
+    <string name="txt_confirmacao2">After confirming your booking, it will appear in the “Bookings” tab</string>
     <string name="btt_cancelar">Cancel</string>
-    <string name="btt_cancelar_reserva">Cancel reservation</string>
+    <string name="btt_cancelar_reserva">Cancel booking</string>
 
     <!--    ?. Perfil-->
     <string name="perfil_user_name" translatable="false">Liz Smith</string>
@@ -155,11 +156,11 @@
     <string name="perfil_reservar">Book now</string>
     <string name="perfil_alterar">Change profile</string>
     <string name="perfil_chat" translatable="false">Chat</string>
-    <string name="perfil_txt_chat">Chat, retire suas dúvidas.</string>
+    <string name="perfil_txt_chat">Chat, clear your doubts.</string>
     <string name="perfil_logout" translatable="false">Logout</string>
 
     <!--    ?. Criação reserva-->
-    <string name="reservar_txt_instrucao">Choose options for your reservation</string>
+    <string name="reservar_txt_instrucao">Select options for your booking</string>
     <string name="reservar_txt_dia">Day:</string>
     <string name="reservar_dia_seg">Mon</string>
     <string name="reservar_dia_ter">Tue</string>
@@ -169,7 +170,7 @@
     <string name="reservar_dia_sab">Sat</string>
     <string name="reservar_dia_dom">Sun</string>
     <string name="reservar_dia" translatable="false">10</string>
-    <string name="reservar_txt_horario">Timetable:</string>
+    <string name="reservar_txt_horario">Schedule:</string>
     <string name="reservar_horario" translatable="false">09:00 AM</string>
     <string name="reservar_txt_qtd">Number of reservations:</string>
     <string name="reservar_hint_qtd_reserva">E.G.: 2</string>
@@ -190,12 +191,12 @@
     <string name="txt_feedback">Tell us your experience about your reservation:</string>
     <string name="txt_feedback2">Write your experience here....</string>
     <string name="btt_reserva">Confirm reservation</string>
-    <string name="bbt_enviar">Submit comment</string>
+    <string name="bbt_enviar">Send comment</string>
 
     <!--    ?. Card feedback-->
 
     <string name="nome_usuario">Username</string>
-    <string name="comentario">Comment</string>
+    <string name="comentario">Feedback</string>
 
     <!--    ?. Card estabelecimento-->
     <string name="veja_mais">See more</string>

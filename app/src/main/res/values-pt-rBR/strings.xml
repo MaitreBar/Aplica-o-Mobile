@@ -74,7 +74,7 @@
     <string name="perfil_txt_reserva">Verifique suas próximas reservas aqui</string>
     <string name="perfil_reservar">Reserve agora</string>
     <string name="perfil_alterar">Alterar perfil</string>
-    <string name="perfil_txt_chat">Chat, clear your doubts.</string>
+    <string name="perfil_txt_chat">Chat, retire suas dúvidas.</string>
     <string name="reservar_txt_instrucao">Escolha as opções para sua reserva</string>
     <string name="reservar_txt_dia">Dia:</string>
     <string name="reservar_dia_seg">Seg</string>
@@ -107,7 +107,7 @@
     <string name="nome_usuario">"Nome do usuário: "</string>
     <string name="comentario">Comentário</string>
     <string name="veja_mais">Veja mais</string>
-    <string name="txt_inicio1">Confira os lugares mais visitados</string>
+    <string name="txt_inicio1">Confira nossos lugares mais visitados</string>
     <string name="categoria">Categorias</string>
     <string name="petiscos">Pesticos</string>
     <string name="porcoes">Porções</string>
@@ -119,4 +119,5 @@
     <string name="descricao_estabelecimento">Descrição</string>
     <string name="faixa_preco">Faixa de preço</string>
     <string name="mapa">Mapa</string>
+    <string name="menu_reservas_concluidas">Reservas concluídas</string>
 </resources>
