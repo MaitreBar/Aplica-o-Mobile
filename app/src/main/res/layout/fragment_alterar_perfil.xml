@@ -10,25 +10,16 @@
 
     <!--    Cabeçalho-->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@color/begeClaro"
-        android:orientation="vertical"
-        android:id="@+id/ll_nav_alterar"
-        android:gravity="center_vertical">
-
+        style="@style/action_bar"
+        android:background="@color/begeClaro">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            style="@style/action_bar_div">
             <TextView
-                style="@style/titulo_cabecalho"
+                style="@style/action_bar_title"
                 android:text="@string/alterar_txt_alterar"/>
-
             <ImageButton
-                style="@style/button_titulo_cabecalho"
-                android:id="@+id/tv_seta_login"/>
+                style="@style/action_bar_icon_arrow_left"
+                android:id="@+id/tv_seta_alterar_perfil"/>
         </LinearLayout>
     </LinearLayout>
 

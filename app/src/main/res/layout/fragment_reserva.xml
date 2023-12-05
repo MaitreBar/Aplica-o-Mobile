@@ -9,38 +9,16 @@
 
     <!--        Card verde escuro -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
+        style="@style/action_bar"
         android:background="@color/verdeEscuro">
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+            style="@style/action_bar_div">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="65dp"
-                android:layout_marginEnd="60dp"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:text="@string/menu_reservas"
-                android:textColor="@color/branco"
-                android:textSize="40sp">
-
-            </TextView>
-
-            <!--            Seta: voltar -->
+                style="@style/action_bar_title"
+                android:text="@string/menu_reservas"/>
             <ImageButton
-                style="@style/botaoSeta"
-                android:layout_marginTop="70dp"
-                android:contentDescription="botão de voltar"
-                tools:ignore="HardcodedText"
-
-                />
-
+                style="@style/action_bar_icon_arrow_left"/>
         </LinearLayout>
-
     </LinearLayout>
 
     <!--        Card de reserva-->

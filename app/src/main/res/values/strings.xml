@@ -88,7 +88,7 @@
          By clicking "Yes", you expressly agree to the terms of this LGPD Policy.
     </string>
 
-<!--    ?.  Inicio-->
+    <!--    ?.  Inicio-->
     <string name="txt_inicio1">Check out the most visited places</string>
     <string name="categoria">Categories</string>
     <string name="drinks" translatable="false">Drinks</string>
@@ -103,7 +103,7 @@
     <string name="alterar_txt_alterar">Change Profile</string>
     <string name="alterar_btn_atualizar">Update</string>
 
-<!--    ?. Visão estabelecimento-->
+    <!--    ?. Visão estabelecimento-->
     <string name="ligar">Call</string>
     <string name="endereco">Address</string>
     <string name="entrar_fila">Get in line</string>
@@ -192,12 +192,12 @@
     <string name="btt_reserva">Confirm reservation</string>
     <string name="bbt_enviar">Submit comment</string>
 
-<!--    ?. Card feedback-->
+    <!--    ?. Card feedback-->
 
     <string name="nome_usuario">Username</string>
     <string name="comentario">Comment</string>
 
-<!--    ?. Card estabelecimento-->
+    <!--    ?. Card estabelecimento-->
     <string name="veja_mais">See more</string>
 
     <!-- TODO: Remove or change this placeholder text -->

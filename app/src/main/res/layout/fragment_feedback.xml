@@ -12,38 +12,16 @@
 
         <!--        Card verde escuro -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="165dp"
+            style="@style/action_bar"
             android:background="@color/verdeEscuro">
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="55dp"
-                android:layout_marginEnd="120dp"
-                android:fontFamily="@font/old_standard_tt_bold"
-                android:text="@string/btt_feedback"
-                android:textColor="@color/branco"
-                android:textSize="40sp">
-
-            </TextView>
-
-            <!--            Seta: voltar -->
+                style="@style/action_bar_div">
+                <TextView
+                    style="@style/action_bar_title"
+                    android:text="@string/btt_feedback"/>
                 <ImageButton
-                    style="@style/botaoSeta"
-                    android:layout_marginTop="55dp"
-                    android:contentDescription="botão de voltar"
-                    tools:ignore="HardcodedText"
-
-                    />
-
+                    style="@style/action_bar_icon_arrow_left"/>
             </LinearLayout>
-
         </LinearLayout>
 
         <!--        Conteúdo de tela-->
