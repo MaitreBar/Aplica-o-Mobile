@@ -66,7 +66,7 @@
     <string name="horario">Horário :</string>
     <string name="telefone">"Telefone "</string>
     <string name="fila">Fila</string>
-    <string name="txt_fila">Você está na posição </string>
+    <string name="txt_fila">Você está na posição :</string>
     <string name="txt_fila2">.  Aguarde.</string>
     <string name="txt_confirmacao1">Deseja confirmar? </string>
     <string name="txt_confirmacao2">Após confirmar a reserva, a mesma aparecerá na aba “Reservas”</string>
@@ -98,7 +98,7 @@
     <string name="txt_feedback">Nos conte a sua experiência sobre a sua reserva: </string>
     <string name="txt_feedback2">" Escreva aqui sua experiência ...."</string>
     <string name="btt_reserva">Confirmar reserva</string>
-    <string name="txt_bem_vindo">Bem vindo (a)</string>
+    <string name="txt_bem_vindo">Bem-vindo (a)</string>
     <string name="txt_pesquisar">Pesquisar</string>
     <string name="txt_estabelecimentos">Estabelecimentos</string>
     <string name="txt_nome_estabelecimento">Nome estabelecimento</string>
@@ -124,4 +124,5 @@
     <string name="online"> Online </string>
     <string name="digite">Escreva a sua mensagem</string>
     <string name="selecione_assento">Selecione um assento</string>
+    <string name="formulario_txt_ver_concluidas">Ver reservas concluídas</string>
 </resources>

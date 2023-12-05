@@ -25,6 +25,7 @@
 
     <!--    Formulários-->
     <string name="formulario_txt_entrar">Login</string>
+    <string name="formulario_txt_ver_concluidas">See your finished bookings</string>
     <string name="formulario_nome">Full name</string>
     <string name="formulario_hint_nome" translatable="false">Liz Smith</string>
     <string name="formulario_nascimento">Birth date</string>
@@ -139,8 +140,8 @@
 
     <!--    ?. Fila-->
     <string name="fila">Row</string>
-    <string name="txt_fila">"You are at the position  "</string>
-    <string name="txt_fila2">. Hold on.</string>
+    <string name="txt_fila">"You are at :"</string>
+    <string name="txt_fila2"> position. Please wait.</string>
 
     <!--    ?. Confirmação Reserva-->
     <string name="txt_confirmacao1">Do you want to confirm?</string>

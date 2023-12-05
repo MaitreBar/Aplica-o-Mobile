@@ -47,4 +47,10 @@ interface Endpoints {
 
     @PUT("/assentos/{id}")
     fun atualizarAssento(@Path("id") id : String, @Body a : Assento): Call<Assento>
+
+    @GET("/fila/posicao/{id}")
+    fun posicaoFila(@Path("id") id: String): Call<Int>
+
+    @POST("/fila/{id}")
+    fun entrarNaFila(@Path("id") id: String): Call<String>
 }

@@ -48,9 +48,10 @@ class ConfirmacaoReserva : Fragment() {
             NetworkUtils.getRetrofitInstance(urlApi)
                 .criarReserva(novaReserva).enqueue(object : Callback<Reserva> {
                     override fun onResponse(call: Call<Reserva>, response: Response<Reserva>) {
+                        if(response.isSuccessful){
                         novaReserva.assentos.forEach { assento ->
                             NetworkUtils.getRetrofitInstance(urlApi)
-                                .atualizarAssento(assento.id, Assento(assento.id, assento.disponivel, novaReserva , estabelecimento!! )).enqueue(object : Callback<Assento> {
+                                .atualizarAssento(assento.id, Assento(assento.id, assento.disponivel, response.body()!!, estabelecimento!! )).enqueue(object : Callback<Assento> {
                                     override fun onResponse(
                                         call: Call<Assento>,
                                         response: Response<Assento>
@@ -65,6 +66,7 @@ class ConfirmacaoReserva : Fragment() {
                                     }
 
                                 })
+                            }
                         }
                     }
 

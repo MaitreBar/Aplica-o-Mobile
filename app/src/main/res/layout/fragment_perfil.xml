@@ -49,9 +49,14 @@
             android:drawableLeft="@drawable/ic_favorite"
             style="@style/perfil_button"/>
         <Button
+            android:id="@+id/btn_perfil_reservas_concluidas"
+            android:text="@string/menu_reservas_concluidas"
+            android:drawableLeft="@drawable/ic_calendar_check"
+            style="@style/perfil_button"/>
+        <Button
             android:id="@+id/btn_perfil_reservar"
             android:text="@string/perfil_reservar"
-            android:drawableLeft="@drawable/ic_calendar_check"
+            android:drawableLeft="@drawable/edit_calendar_24"
             style="@style/perfil_button"/>
         <Button
             android:id="@+id/btn_perfil_alterar"

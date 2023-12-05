@@ -124,9 +124,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/drinks"/>
             <TextView
+                android:visibility="gone"
                 style="@style/tw_title_medium"
                 android:text="@string/mapa"/>
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/neutralTertiary"/>
