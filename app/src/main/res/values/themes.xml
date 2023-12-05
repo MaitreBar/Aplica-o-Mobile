@@ -11,6 +11,46 @@
     <style name="Theme.Maitre" parent="Base.Theme.Maitre"/>
 
 <!--    Padrões gerais-->
+    <style name="action_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">170dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">20dp</item>
+    </style>
+    <style name="action_bar_div">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="action_bar_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/neutralLighter</item>
+    </style>
+    <style name="action_bar_icon_arrow_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/seta_esquerda</item>
+        <item name="android:backgroundTint">@color/transparente</item>
+    </style>
+    <style name="action_bar_subtitle_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/neutralLighter</item>
+    </style>
+    <style name="action_bar_subtitle_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/neutralLighter</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+
     <style name="titulo_cabecalho">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -84,7 +124,7 @@
         <item name="cornerRadius">5dp</item>
         <item name="cornerSize">1dp</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/branco</item>
+        <item name="android:textColor">@color/neutralLighter</item>
         <item name="android:fontFamily">@font/quicksand_semibold</item>
         <item name="android:layout_marginVertical">20dp</item>
     </style>

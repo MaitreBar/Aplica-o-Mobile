@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import android.widget.Toast
 import maitre.app.R
 import maitre.app.data.Assento
@@ -28,7 +30,10 @@ class CriacaoReserva : Fragment() {
     private lateinit var e : Estabelecimento
     private lateinit var horario : String
     private lateinit var dia : String
-
+//    Variáveis do Spinner
+    private val languagesList = mutableListOf<String>()
+    private var spinnerLanguages: Spinner? = null
+  
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -123,7 +128,7 @@ class CriacaoReserva : Fragment() {
             val assentos : MutableList<Assento> = mutableListOf()
 
             NetworkUtils.getRetrofitInstance(urlApi)
-                .getAssentoById(R.id.numero_assento).enqueue(object : Callback<Assento>{
+                .getAssentoById(R.id.spinner_sample).enqueue(object : Callback<Assento>{
                     override fun onResponse(call: Call<Assento>, response: Response<Assento>) {
                         if(response.isSuccessful) {
                             assentos.add(response.body()!!)
@@ -153,6 +158,16 @@ class CriacaoReserva : Fragment() {
         }
 
         fragmentTransaction.commit()
+
+//        Código Spinner
+        spinnerLanguages = view.findViewById(R.id.spinner_sample)
+        languagesList.add("English")
+        languagesList.add("French")
+        languagesList.add("Hindi")
+
+        val aa = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, languagesList)
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerLanguages?.adapter = aa
     }
 
     fun setHorario(h: String) {

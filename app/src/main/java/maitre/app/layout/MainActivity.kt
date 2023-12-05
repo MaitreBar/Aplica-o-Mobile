@@ -2,6 +2,7 @@ package maitre.app.layout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import maitre.app.R
 import maitre.app.databinding.ActivityMainBinding

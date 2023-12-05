@@ -9,45 +9,31 @@
 
     <!--    Cabeçalho-->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@color/begeClaro"
-        android:orientation="vertical"
-        android:id="@+id/ll_nav_login">
-
+        style="@style/action_bar"
+        android:background="@color/begeClaro">
+        <LinearLayout
+            style="@style/action_bar_div">
+            <TextView
+                style="@style/action_bar_title"
+                android:text="@string/formulario_txt_entrar"/>
+            <ImageButton
+                style="@style/action_bar_icon_arrow_left"
+                android:id="@+id/tv_seta_home"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="50dp">
-
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
             <TextView
-                style="@style/titulo_cabecalho"
-                android:text="@string/formulario_txt_entrar"/>
-
-            <ImageButton
-                style="@style/button_titulo_cabecalho"
-                android:id="@+id/tv_seta_home"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    style="@style/subtitulo_cabecalho"
-                    android:text="@string/login_txt_entrar"
-                    android:layout_marginLeft="30dp"/>
-
-                <TextView
-                    android:id="@+id/tv_ir_lgpd"
-                    style="@style/subtitulo_cabecalho"
-                    android:clickable="true"
-                    android:text="@string/login_txt_cadastro"
-                    android:textColor="@color/marrom"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/quicksand_bold"/>
-            </LinearLayout>
+                style="@style/action_bar_subtitle_1"
+                android:text="@string/login_txt_entrar"/>
+            <TextView
+                android:id="@+id/tv_ir_lgpd"
+                style="@style/action_bar_subtitle_2"
+                android:text="@string/login_txt_cadastro"
+                android:textColor="@color/marrom"
+                />
         </LinearLayout>
     </LinearLayout>
 
@@ -81,7 +67,6 @@
                 style="@style/input_formulario"
                 android:hint="@string/formulario_hint_senha"
                 android:background="@drawable/rounded_edit_text"/>
-
 
             <Button
                 android:id="@+id/bt_logar"

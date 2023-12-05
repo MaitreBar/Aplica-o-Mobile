@@ -19,4 +19,5 @@
     <color name="neutralTertiary">#a6a6a6</color> <!--elementos gerais-->
     <color name="neutralTertiaryAlt">#c8c8c8</color>
     <color name="neutralQuartenary">#d0d0d0</color>
+    <color name="neutralLighter">#f4f4f4</color> <!--textos-->
 </resources>

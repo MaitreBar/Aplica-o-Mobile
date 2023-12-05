@@ -48,7 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 <!--                Botoes horário reserva-->
-
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -75,21 +74,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
             <TextView
                 style="@style/txt_reservar"
                 android:layout_width="200dp"
                 android:text="@string/reservar_txt_num_assento"/>
 
-            <EditText
-                android:id="@+id/numero_assento"
-                style="@style/input_formulario"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_edit_text"
-                android:hint="@string/reservar_hint_qtd_assentos"
-                android:inputType="number"
-                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_sample"/>
         </LinearLayout>
 
         <LinearLayout
@@ -114,6 +109,5 @@
             style="@style/button_formulario"
             android:text="@string/reservar_btn_confirmar"
             android:backgroundTint="@color/verdeEscuro"/>
-
     </LinearLayout>
 </ScrollView>
