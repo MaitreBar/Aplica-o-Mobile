@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.Reserva"
-    android:id="@+id/layout_reserva">
+    tools:context=".layout.ReservasConcluidas">
 
     <!--        Card verde escuro -->
     <LinearLayout
@@ -15,9 +14,8 @@
             style="@style/action_bar_div">
             <TextView
                 style="@style/action_bar_title"
-                android:text="@string/menu_reservas"/>
+                android:text="@string/menu_reservas_concluidas"/>
             <ImageButton
-                android:id="@+id/btn_voltar_inicial"
                 style="@style/action_bar_icon_arrow_left"/>
         </LinearLayout>
     </LinearLayout>

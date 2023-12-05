@@ -15,12 +15,10 @@ class Home : AppCompatActivity() {
 
         binding.layoutHome.setOnClickListener {
             val intent = Intent(this, Login::class.java)
-
             startActivity(intent)
         }
         binding.bntLayoutHome.setOnClickListener {
             val intent = Intent(this, Login::class.java)
-
             startActivity(intent)
         }
     }

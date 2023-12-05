@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
+import de.hdodenhof.circleimageview.CircleImageView
 import maitre.app.R
 import maitre.app.data.Estabelecimento
 import maitre.app.databinding.FragmentInicialBinding
@@ -69,9 +71,26 @@ class Inicial : Fragment() {
             override fun onFailure(call: Call<List<Estabelecimento>>, t: Throwable) {
                 Toast.makeText(context, t.message, Toast.LENGTH_SHORT).show()
             }
-
         })
 
+        view.findViewById<Button>(R.id.btn_ir_lista_estabelecimentos).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ListaEstabelecimento())
+        }
+
+        view.findViewById<CircleImageView>(R.id.btn_filtro_drinks).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ListaEstabelecimento())
+        }
+
+        view.findViewById<CircleImageView>(R.id.btn_filtro_petiscos).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ListaEstabelecimento())
+        }
+
+        view.findViewById<CircleImageView>(R.id.btn_filtro_porcao).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ListaEstabelecimento())
+        }
+        view.findViewById<CircleImageView>(R.id.btn_filtro_sobremesa).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ListaEstabelecimento())
+        }
 
     }
 }

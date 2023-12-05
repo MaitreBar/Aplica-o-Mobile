@@ -26,5 +26,11 @@ class AceiteLgpd : AppCompatActivity() {
             Toast.makeText(baseContext, "Redirecionando para cadastro", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
+
+        binding.ibVoltarCadastro.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            Toast.makeText(baseContext, "Redirecionando para login", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
     }
 }

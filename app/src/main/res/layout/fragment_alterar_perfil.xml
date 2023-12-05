@@ -19,7 +19,7 @@
                 android:text="@string/alterar_txt_alterar"/>
             <ImageButton
                 style="@style/action_bar_icon_arrow_left"
-                android:id="@+id/tv_seta_alterar_perfil"/>
+                android:id="@+id/btn_voltar_perfil"/>
         </LinearLayout>
     </LinearLayout>
 

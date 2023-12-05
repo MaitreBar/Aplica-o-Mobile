@@ -36,12 +36,11 @@ class Perfil : Fragment() {
         view.findViewById<Button>(R.id.btn_perfil_reservas).setOnClickListener {
             (activity as MainActivity).binding.bottomNavigationView.selectedItemId =
                 R.id.reserva_nav
-
         }
 
         view.findViewById<Button>(R.id.btn_perfil_reservar).setOnClickListener {
-            (activity as MainActivity).replaceFragment(CriacaoReserva())
-
+            (activity as MainActivity).binding.bottomNavigationView.selectedItemId =
+                R.id.home_nav
         }
 
         view.findViewById<Button>(R.id.btn_perfil_alterar).setOnClickListener {

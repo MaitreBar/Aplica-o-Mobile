@@ -50,16 +50,12 @@
                     android:text="@string/txt_nome_estabelecimento"
                     android:fontFamily="@font/old_standard_tt_bold"
                     android:textColor="@color/branco"
-                    android:textSize="24dp"/>
+                    android:textSize="24dp"
+                    android:layout_marginBottom="10dp"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tres_cifroes"
-                        android:textColor="@color/branco"/>
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -119,14 +115,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/txt__estabelecimento" />
-            <TextView
-                style="@style/tw_title_medium"
-                android:text="@string/faixa_preco"/>
-            <TextView
-                android:id="@+id/tv_visao_faixa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tres_cifroes"/>
             <TextView
                 style="@style/tw_title_medium"
                 android:text="@string/tags"/>

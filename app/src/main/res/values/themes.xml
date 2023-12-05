@@ -284,14 +284,27 @@
     <style name="nome_estabelecimento">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:gravity">center</item>
     </style>
     <style name="card_estabelecimento">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="button_ver_mais" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/verdeEscuro</item>
+        <item name="background">@color/transparente</item>
+        <item name="strokeColor">@color/verdeEscuro</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
     </style>
 
 <!--    Visão estabelecimento-->

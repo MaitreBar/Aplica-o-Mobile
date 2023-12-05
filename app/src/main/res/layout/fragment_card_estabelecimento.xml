@@ -22,32 +22,26 @@
                     android:layout_weight="1">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="120dp"
                         android:src="@mipmap/bar_um"
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_horizontal">
                     <TextView
                         android:layout_marginTop="-5dp"
                         android:text="@string/nome_bar1"
                         android:id="@+id/tv_estabelecimento_nome"
                         style="@style/nome_estabelecimento"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tres_cifroes"/>
                     <Button
                         android:id="@+id/btn_visao_estabelecimento"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/veja_mais"
-                        android:backgroundTint="@color/verdeEscuro"
-                        android:layout_marginTop="10dp"/>
+                        style="@style/button_ver_mais"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
