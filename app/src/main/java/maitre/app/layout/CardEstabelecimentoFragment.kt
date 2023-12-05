@@ -26,12 +26,16 @@ class CardEstabelecimentoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val estabelecimento : Estabelecimento = (arguments?.getSerializable("estabelecimento") as Estabelecimento?)!!
+        val estabelecimento : Estabelecimento = arguments?.getSerializable("estabelecimento") as Estabelecimento
         binding.tvEstabelecimentoNome.text = estabelecimento.nome
 
         binding.btnVisaoEstabelecimento.setOnClickListener {
             Sessao.estabelecimento = estabelecimento
-            (activity as MainActivity).replaceFragment(VisaoEstabelecimento())
+            val mainActivity = (activity as MainActivity)
+            mainActivity.replaceFragment(VisaoEstabelecimento())
+
+//            TODO: se der tempo
+//            mainActivity.findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView).selectedItemId = R.id.home_nav
         }
     }
 }
