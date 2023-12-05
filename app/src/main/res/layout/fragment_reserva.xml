@@ -17,6 +17,7 @@
                 style="@style/action_bar_title"
                 android:text="@string/menu_reservas"/>
             <ImageButton
+                android:id="@+id/btn_voltar_inicial"
                 style="@style/action_bar_icon_arrow_left"/>
         </LinearLayout>
     </LinearLayout>

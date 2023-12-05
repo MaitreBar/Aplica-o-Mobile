@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import maitre.app.R
 import maitre.app.data.Usuario
@@ -37,12 +38,18 @@ class AlterarPerfil : Fragment() {
     ): View {
         // apagar o conteúdo que vem e criar essas 2 linhas para poder usar binding numa fragment
         binding = FragmentAlterarPerfilBinding.inflate(inflater, container, false)
+
+
         return binding.root
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<ImageButton>(R.id.btn_voltar_perfil).setOnClickListener {
+            (activity as MainActivity).replaceFragment(Perfil())
+        }
 
         view.findViewById<EditText>(R.id.et_atualizar_nome)?.text = usuario?.nome!!.toEditable()
         view.findViewById<EditText>(R.id.et_atualizar_dtNasc)?.text = LocalDate.parse(usuario?.dtNasc!!).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")).toEditable()
@@ -87,6 +94,8 @@ class AlterarPerfil : Fragment() {
             binding.etSenhaAntiga.error = "A senha está incorreta"
 
         }
+
+
     }
 }
 

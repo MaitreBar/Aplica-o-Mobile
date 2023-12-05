@@ -68,7 +68,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btn_mais_visitados_inicial"
+                android:id="@+id/btn_ir_lista_estabelecimentos"
                 style="@style/button_formulario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                     android:orientation="vertical"
                     android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/drinks_inicial"
+                        android:id="@+id/btn_filtro_drinks"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
@@ -118,7 +118,7 @@
                     android:orientation="vertical"
                     android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/snacks_inicial"
+                        android:id="@+id/btn_filtro_petiscos"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
@@ -137,7 +137,7 @@
                     android:orientation="vertical"
                     android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/petiscos_inicial"
+                        android:id="@+id/btn_filtro_porcao"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"
@@ -156,7 +156,7 @@
                     android:orientation="vertical"
                     android:layout_marginHorizontal="2dp">
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/sobremesas_inicial"
+                        android:id="@+id/btn_filtro_sobremesa"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_weight="1"

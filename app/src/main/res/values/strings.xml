@@ -6,7 +6,7 @@
     <string name="txt_reservas">Booking</string>
     <string name="txt_cifroes" translatable="false">$$$</string>
     <string name="txt_nota_estabelecimento" translatable="false">5.0</string>
-    <string name="txt_nome_estabelecimento">Establishment's name</string>
+    <string name="txt_nome_estabelecimento">Establishment\'s name</string>
     <string name="txt_bem_vindo">Welcome</string>
     <string name="txt_pesquisar">Search</string>
     <string name="txt_estabelecimentos">Establishments</string>
@@ -110,7 +110,7 @@
     <string name="entrar_fila">Get in line</string>
     <string name="reservar">Book</string>
     <string name="descricao_estabelecimento">Description</string>
-    <string name="txt__estabelecimento" translatable="false">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</string>
+    <string name="txt__estabelecimento" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus tellus lacus. Donec at iaculis est.</string>
     <string name="faixa_preco">Price range</string>
     <string name="tags" translatable="false">Tags</string>
     <string name="mapa">Map</string>

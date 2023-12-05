@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.Toast
 import maitre.app.R
 import maitre.app.data.Estabelecimento
@@ -91,6 +92,9 @@ class Reserva : Fragment() {
 
             })
 
+        view.findViewById<ImageButton>(R.id.btn_voltar_inicial).setOnClickListener {
+            (activity as MainActivity).replaceFragment(Inicial())
+        }
     }
 
 

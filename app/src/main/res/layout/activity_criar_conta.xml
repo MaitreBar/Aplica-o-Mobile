@@ -18,7 +18,7 @@
                 android:text="@string/cadastro_criar"/>
             <ImageButton
                 style="@style/action_bar_icon_arrow_left"
-                android:id="@+id/tv_seta_login"/>
+                android:id="@+id/tv_seta_lgpd"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

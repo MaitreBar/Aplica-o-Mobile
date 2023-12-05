@@ -31,9 +31,9 @@ class CriarConta : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.tvSetaLogin.setOnClickListener {
-            val intent = Intent(this, Login::class.java)
-            Toast.makeText(baseContext, "Voltando para tela de login", Toast.LENGTH_SHORT).show()
+        binding.tvSetaLgpd.setOnClickListener {
+            val intent = Intent(this, AceiteLgpd::class.java)
+            Toast.makeText(baseContext, "Voltando para tela de LGPD", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 
