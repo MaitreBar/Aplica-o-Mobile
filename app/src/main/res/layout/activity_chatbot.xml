@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--        Card branco chat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/branco">
+
+        <!--            Seta: voltar -->
+        <ImageButton
+            style="@style/botaoSetaPreto"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="botão de voltar"
+            tools:ignore="HardcodedText" />
+
+        <!--                 titulo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/old_standard_tt_bold"
+            android:text="@string/chat"
+            android:textColor="@color/preto"
+            android:textSize="20sp"></TextView>
+        <!--                 titulo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/online"
+            android:textColor="@color/verdeAgua"
+            android:textSize="13sp"></TextView>
+
+    </LinearLayout>
+
+    <!--        Conteúdo de tela-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+        <!--        Texto da reserva -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@color/cinzaclaro"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5sp"
+                android:fontFamily="@font/quicksand_semibold"
+                android:textColor="@color/verdeEscuro"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/branco"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="490dp"
+                    android:fillViewport="true"
+                    android:id="@+id/scrollView"
+                    android:paddingTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/container_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rouded_chatbox"
+                            android:backgroundTint="@color/cinzaclaro"
+                            android:fontFamily="@font/quicksand_semibold"
+                            android:padding="12dp"
+                            android:text="Olá, Bem vindo, eu sou a Maytê e vim solucionar suas as suas dúvidas!!! por favor escolha uma opção abaixo para eu te ajudar :"
+                            android:textColor="@color/preto"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rouded_chatbox"
+                            android:backgroundTint="@color/cinzaclaro"
+                            android:fontFamily="@font/quicksand_semibold"
+                            android:padding="12dp"
+                            android:text="1 - Problemas com a plataforma. "
+                            android:textColor="@color/preto"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rouded_chatbox"
+                            android:backgroundTint="@color/cinzaclaro"
+                            android:fontFamily="@font/quicksand_semibold"
+                            android:padding="12dp"
+                            android:text="2 - Problemas com a conta."
+                            android:textColor="@color/preto"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rouded_chatbox"
+                            android:backgroundTint="@color/cinzaclaro"
+                            android:fontFamily="@font/quicksand_semibold"
+                            android:padding="12dp"
+                            android:text="3 - Esqueceu senha ou email"
+                            android:textColor="@color/preto"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="-70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="@string/digite"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/cinza1A"
+                    android:textSize="13sp"></EditText>
+
+                <ImageButton
+                    android:id="@+id/btn_send"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/branco"
+                    android:src="@mipmap/send"></ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

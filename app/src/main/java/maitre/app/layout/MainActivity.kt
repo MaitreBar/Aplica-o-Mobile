@@ -2,6 +2,7 @@ package maitre.app.layout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import maitre.app.R
@@ -37,5 +38,12 @@ class MainActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_layout,fragment)
         fragmentTransaction.commit()
+    }
+    fun showBottomNavigationView() {
+        binding.bottomNavigationView.visibility = View.VISIBLE
+    }
+
+    fun hideBottomNavigationView() {
+        binding.bottomNavigationView.visibility = View.GONE
     }
 }

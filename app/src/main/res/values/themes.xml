@@ -312,4 +312,19 @@
         <item name="android:fontFamily">@font/old_standard_tt_bold</item>
         <item name="android:textColor">@color/verdeEscuro</item>
     </style>
+    <style name="botaoSetaPreto" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">5dp</item>
+        <item name="cornerSize">1dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:src">@drawable/ic_arrow_back_black</item>
+    </style>
+
 </resources>

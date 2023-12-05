@@ -7,11 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import maitre.app.R
-import maitre.app.databinding.FragmentPerfilBinding
 import maitre.app.utils.Sessao.usuario
 
 class Perfil : Fragment() {
@@ -52,9 +49,11 @@ class Perfil : Fragment() {
 
         }
 
-//        view.findViewById<Button>(R.id.btn_perfil_chat).setOnClickListener {
-//            (activity as MainActivity).replaceFragment(Chat())
-//        }
+        view.findViewById<Button>(R.id.btn_perfil_chat).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ChatbotFragment())
+            (activity as MainActivity).hideBottomNavigationView()
+
+        }
 
         view.findViewById<Button>(R.id.btn_perfil_logout).setOnClickListener {
 
