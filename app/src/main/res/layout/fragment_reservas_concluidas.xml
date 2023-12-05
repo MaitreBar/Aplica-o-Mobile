@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.ReservasConcluidas">
+    tools:context=".layout.ReservasConcluidasFragment">
 
     <!--        Card verde escuro -->
     <LinearLayout
@@ -16,6 +16,7 @@
                 style="@style/action_bar_title"
                 android:text="@string/menu_reservas_concluidas"/>
             <ImageButton
+                android:id="@+id/btn_voltar_perfil"
                 style="@style/action_bar_icon_arrow_left"/>
         </LinearLayout>
     </LinearLayout>
@@ -35,7 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/scroll_reservas"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp">
 
             </LinearLayout>
 

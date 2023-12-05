@@ -49,6 +49,11 @@ class Perfil : Fragment() {
 
         }
 
+        view.findViewById<Button>(R.id.btn_perfil_reservas_concluidas).setOnClickListener {
+            (activity as MainActivity).replaceFragment(ReservasConcluidasFragment())
+
+        }
+
         view.findViewById<Button>(R.id.btn_perfil_chat).setOnClickListener {
             (activity as MainActivity).replaceFragment(ChatbotFragment())
             (activity as MainActivity).hideBottomNavigationView()

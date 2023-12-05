@@ -25,6 +25,7 @@
 
     <!--    Formulários-->
     <string name="formulario_txt_entrar">Login</string>
+    <string name="formulario_txt_ver_concluidas">See your finished bookings</string>
     <string name="formulario_nome">Full name</string>
     <string name="formulario_hint_nome" translatable="false">Liz Smith</string>
     <string name="formulario_nascimento">Birth date</string>

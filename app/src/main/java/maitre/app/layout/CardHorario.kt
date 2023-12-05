@@ -33,7 +33,7 @@ class CardHorario : Fragment() {
 
         val horario = arguments?.getString("hora")!!
 
-        binding.reservaHora.hint = horario
+        binding.reservaHora.text = horario
 
         binding.reservaHora.setOnClickListener {
              sharedViewModel.hora = horario
