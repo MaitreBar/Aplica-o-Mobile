@@ -90,7 +90,7 @@ class AlterarPerfil : Fragment() {
     }
 }
 
-    fun atualiza(u : Usuario){
+    private fun atualiza(u : Usuario){
         NetworkUtils.getRetrofitInstance(Sessao.urlApi)
             .atualizar(u, usuario?.id!!).enqueue(object : Callback<Usuario> {
             override fun onResponse(call: Call<Usuario>, response: Response<Usuario>) {

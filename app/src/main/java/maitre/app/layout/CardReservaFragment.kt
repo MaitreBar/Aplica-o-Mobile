@@ -14,6 +14,7 @@ import maitre.app.databinding.FragmentCardReservaBinding
 import maitre.app.utils.NetworkUtils
 import maitre.app.data.Reserva
 import maitre.app.utils.Sessao
+import maitre.app.utils.Sessao.reserva
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -50,6 +51,15 @@ class CardReservaFragment : Fragment() {
             popupView.findViewById<ImageButton>(R.id.btn_reserva_fechar).setOnClickListener {
             popup.dismiss()
             }
+            reserva = arguments?.getSerializable("reserva") as Reserva
+
+            if(reserva!!.checkOut && reserva!!.checkIn) {
+                popupView.findViewById<Button>(R.id.btn_reserva_feedback).visibility = View.VISIBLE
+                popupView.findViewById<Button>(R.id.btn_reserva_cancelar).visibility = View.GONE
+            } else {
+                popupView.findViewById<Button>(R.id.btn_reserva_feedback).visibility = View.GONE
+                popupView.findViewById<Button>(R.id.btn_reserva_cancelar).visibility = View.VISIBLE
+            }
 
             popupView.findViewById<Button>(R.id.btn_reserva_cancelar).setOnClickListener {
                 NetworkUtils.getRetrofitInstance(Sessao.urlApi)
@@ -75,7 +85,8 @@ class CardReservaFragment : Fragment() {
             popupView.findViewById<Button>(R.id.btn_reserva_feedback).setOnClickListener {
                 popup.dismiss()
 
-                Feedback().setReserva(arguments?.getSerializable("reserva") as Reserva)
+                reserva = arguments?.getSerializable("reserva") as Reserva
+
                 (activity as MainActivity).replaceFragment(Feedback())
             }
 

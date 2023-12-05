@@ -8,7 +8,7 @@ data class Reserva(
     val horaReserva: String,
     val checkIn: Boolean,
     val dtHoraCheckIn: String?,
-    val checkout: Boolean,
+    val checkOut: Boolean,
     val dtHoraCheckOut: String?,
     var feedback: String?,
     val estabelecimento: Estabelecimento,
