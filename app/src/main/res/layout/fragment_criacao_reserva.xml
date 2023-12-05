@@ -31,6 +31,8 @@
                 android:id="@+id/container_reserva_dias"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+                <!-- Botoes dia reserva-->
+
             </LinearLayout>
         </HorizontalScrollView>
 

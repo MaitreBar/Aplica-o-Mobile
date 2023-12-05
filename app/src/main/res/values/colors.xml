@@ -10,6 +10,9 @@
     <color name="branco">#FFFFFF</color>
     <color name="transparente">#00000000</color>
 
+    <color name="cinza1A"> #A1A1A1</color>
+    <color name="cinzaclaro">#ECECEC</color>
+
 <!--    paleta dark mode-->
     <color name="preto">#000000</color>
     <color name="neutralDark">#212121</color> <!--background app-->

@@ -14,10 +14,21 @@ class CardDiaReservaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentCardDiaReservaBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val diaSemana = arguments?.getString("diaSemana")!!
+        val diaMes = arguments?.getString("diaMes")!!
+        binding.reservaDiaNumero.text = diaMes
+        binding.reservaDiaSemana.text = diaSemana
+
+        binding.buttonDiaReserva.setOnClickListener {
+            CriacaoReserva().setDia(diaMes)
+        }
+    }
 }

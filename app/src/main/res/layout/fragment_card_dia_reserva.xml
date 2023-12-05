@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".layout.CardDiaReservaFragment">
     <LinearLayout
+        android:id="@+id/button_dia_reserva"
         style="@style/button_layout_dia_reserva">
         <TextView
             android:id="@+id/reserva_dia_semana"
